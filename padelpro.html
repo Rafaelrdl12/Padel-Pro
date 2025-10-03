@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Pádel — Inicio</title>
+  <link rel="stylesheet" href="padelpro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">🎾 PadelShop</a>
+
+      <nav class="menu">
+        <a href="#palas">Palas de Pádel</a>
+        <a href="#zapatillas">Zapatillas</a>
+        <a href="#overgrips">Overgrips</a>
+        <a href="#ropa">Ropa</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="icons">
+        <button aria-label="Mi cuenta" title="Mi cuenta">👤</button>
+        <button aria-label="Carrito" title="Carrito">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- AVISO PROMO -->
+    <div class="promo">
+      Si no sabes qué regalar, regala <strong>Padel Pro</strong> con las nuevas <u>tarjetas regalo</u>.
+    </div>
+
+    <!-- CARRUSEL -->
+    <section class="carousel" aria-label="Carrusel de portada">
+      <button class="ctrl prev" aria-label="Anterior">❮</button>
+
+      <div class="track">
+        <!-- Cambia las imágenes a las tuyas -->
+        <div class="slide active">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1600&auto=format&fit=crop" alt="Colección Bullpadel 2026 - pala 1">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1600&auto=format&fit=crop" alt="Colección Bullpadel 2026 - pala 2">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1599050751790-1cda5db2f7f8?q=80&w=1600&auto=format&fit=crop" alt="Colección Bullpadel 2026 - pala 3">
+        </div>
+      </div>
+
+      <button class="ctrl next" aria-label="Siguiente">❯</button>
+
+      <div class="dots" role="tablist" aria-label="Paginación carrusel">
+        <!-- Los puntitos se rellenan por JS -->
+      </div>
+    </section>
+
+    <!-- NUESTRAS NOVEDADES -->
+    <section class="container" id="novedades">
+      <h2 class="section-title">Nuestras Novedades</h2>
+
+      <div class="products">
+        <!-- Tarjeta de producto (duplica/cambia a tu gusto) -->
+        <article class="card">
+          <span class="badge">Novedad</span>
+          <img src="https://images.unsplash.com/photo-1617952193569-9b9d2b2d6be8?q=80&w=800&auto=format&fit=crop" alt="NOX AT10 Genius 18K Alum 2026">
+          <h3>NOX AT10 Genius 18K Alum by Agustín Tapia 2026</h3>
+          <p class="price">389,95 €</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Novedad</span>
+          <img src="https://images.unsplash.com/photo-1593341646742-8c3d7457f6d9?q=80&w=800&auto=format&fit=crop" alt="NOX AT10 Genius 12K Xtrem">
+          <h3>NOX AT10 Genius 12K Xtrem by Agustín Tapia</h3>
+          <p class="price">389,95 €</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Novedad</span>
+          <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800&auto=format&fit=crop" alt="NOX AT10 Genius Attack 12K">
+          <h3>NOX AT10 Genius Attack 12K Alum Xtrem</h3>
+          <p class="price">359,95 €</p>
+        </article>
+
+        <article class="card">
+          <span class="badge">Novedad</span>
+          <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=800&auto=format&fit=crop" alt="NOX ML10 Ventus Control 3K">
+          <h3>NOX ML10 Ventus Control 3K by Miguel Lamperti</h3>
+          <p class="price">339,95 €</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- VÍDEO (pon tu propio vídeo/pala) -->
+    <section class="container video-section">
+      <h2 class="section-title">Vídeo destacado</h2>
+      <!-- Sustituye el src por tu archivo o un embed -->
+      <video controls poster="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=1200&auto=format&fit=crop">
+        <source src="video-pala.mp4" type="video/mp4">
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="#palas">Palas</a></li>
+          <li><a href="#zapatillas">Zapatillas</a></li>
+          <li><a href="#accesorios">Accesorios</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#envios">Envíos y devoluciones</a></li>
+          <li><a href="#tiendas">Tiendas y contacto</a></li>
+          <li><a href="#terminos">Términos y condiciones</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="#ayuda">Ayuda</a></li>
+          <li><a href="#soporte">Soporte técnico</a></li>
+          <li><a href="#garantia">Garantía</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a aria-label="Instagram" href="#">📷</a>
+          <a aria-label="Twitter" href="#">🐦</a>
+          <a aria-label="Facebook" href="#">📘</a>
+          <a aria-label="YouTube" href="#">▶️</a>
+        </div>
+        <p class="small">© 2026 PadelShop</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="padelpro.js"></script>
+</body>
+</html>
