@@ -67,10 +67,19 @@ html,body{margin:0;padding:0;font-family:Montserrat,system-ui,-apple-system,Aria
 .track{display:flex;transition:transform .5s ease}
 .slide{min-width:100%;height:360px}
 .slide img{width:100%;height:100%;object-fit:cover;display:block}
-.ctrl{
-  position:absolute;top:50%;transform:translateY(-50%);
-  background:#ffffffcf;border:none;font-size:24px;line-height:1;
-  width:40px;height:40px;border-radius:999px;cursor:pointer;
+.ctrl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffffcf;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  cursor: pointer;
+  z-index: 10; /* asegura que quede sobre las imágenes */
 }
 .prev{left:10px} .next{right:10px}
 .ctrl:hover{background:#fff}
