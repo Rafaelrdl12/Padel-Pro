@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Pádel — Productos</title>
+  <link rel="stylesheet" href="padelpro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="contenedor navegacion">
+      <a class="logo" href="index.html">
+        <img src="images/lgo2.png" alt="PadelShop">
+      </a>
+
+      <nav class="menu">
+        <a href="productos.html" class="activa">Palas de Pádel</a>
+        <a href="#zapatillas">Zapatillas</a>
+        <a href="#overgrips">Overgrips</a>
+        <a href="#ropa">Ropa</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="iconos">
+        <button aria-label="Mi cuenta" title="Mi cuenta">👤</button>
+        <button aria-label="Carrito" title="Carrito" onclick="location.href='cesta.html'">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor productos-pagina">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="barra-herramientas">
+      <div class="caja-busqueda">
+        <input id="buscar" type="search" placeholder="Buscar pala..." />
+      </div>
+
+      <div class="pildoras" role="tablist" aria-label="Ordenar">
+        <button class="pildora activa" data-sort="nuevo">✔ Novedades</button>
+        <button class="pildora" data-sort="asc">Precio Ascendente</button>
+        <button class="pildora" data-sort="desc">Precio Descendente</button>
+        <button class="pildora" data-sort="stock">En Stock</button>
+      </div>
+    </div>
+
+    <div class="disposicion">
+      <!-- FILTROS LATERALES -->
+      <aside class="filtros">
+        <h3>Filtrar por</h3>
+
+        <details open>
+          <summary>Control / Potencia</summary>
+          <label><input type="checkbox" class="filtro-check" data-filter="tipo" value="control"> Control</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="tipo" value="potencia"> Potencia</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="tipo" value="polivalente"> Polivalente</label>
+        </details>
+
+        <details open>
+          <summary>Peso</summary>
+          <label><input type="checkbox" class="filtro-check" data-filter="peso" value="ligera"> Ligera</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="peso" value="media"> Media</label>
+        </details>
+
+        <details open>
+          <summary>Marcas</summary>
+          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="BullPadel"> BullPadel</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="Head"> Head</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="Siux"> Siux</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="NOX"> NOX</label>
+        </details>
+
+        <details open>
+          <summary>Nivel</summary>
+          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="iniciación"> Iniciación</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="medio"> Medio</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="competición"> Competición</label>
+        </details>
+
+        <details open>
+          <summary>Tipo de juego</summary>
+          <label><input type="checkbox" class="filtro-check" data-filter="juego" value="ataque"> Ataque</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="juego" value="defensa"> Defensa</label>
+        </details>
+
+        <details open>
+          <summary>Género</summary>
+          <label><input type="checkbox" class="filtro-check" data-filter="genero" value="hombre"> Hombre</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="genero" value="mujer"> Mujer</label>
+        </details>
+
+        <details open>
+          <summary>Precio</summary>
+          <div class="rango">
+            <input id="rango" type="range" min="0" max="1000" step="10" value="1000">
+            <div class="salida-rango"><span id="salidaRango">0–1000 €</span></div>
+          </div>
+        </details>
+
+        <button class="btn-limpiar" id="limpiar">Limpiar filtros</button>
+      </aside>
+
+      <!-- LISTADO DE PRODUCTOS -->
+      <section>
+        <div class="productos" id="rejilla">
+          <!-- Cada tarjeta tiene data- atributos para los filtros -->
+          <article class="tarjeta" data-marca="BullPadel" data-precio="339.90" data-stock="1" data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+            <span class="insignia">Novedad</span>
+            <img src="images/bullpadelnueron.png" alt="BullPadel Neuron 02 2026">
+            <h3>BullPadel Neuron 02</h3>
+            <p class="precio">339,90 €</p>
+          </article>
+
+          <article class="tarjeta" data-marca="BullPadel" data-precio="279.99" data-stock="1" data-tipo="control" data-peso="ligera" data-nivel="medio" data-juego="defensa" data-genero="mujer">
+            <img src="images/Captura2.PNG" alt="BullPadel Vertex V5">
+            <h3>BullPadel Vertex V5</h3>
+            <p class="precio">279,99 €</p>
+          </article>
+
+          <article class="tarjeta" data-marca="BullPadel" data-precio="319.90" data-stock="0" data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+            <img src="images/Captura3.PNG" alt="BullPadel Hack 04">
+            <h3>BullPadel Hack 04</h3>
+            <p class="precio">319,90 €</p>
+          </article>
+
+          <article class="tarjeta" data-marca="BullPadel" data-precio="189.99" data-stock="1" data-tipo="control" data-peso="ligera" data-nivel="iniciación" data-juego="defensa" data-genero="mujer">
+            <img src="images/Captura4.PNG" alt="BullPadel Pearl">
+            <h3>BullPadel Pearl</h3>
+            <p class="precio">189,99 €</p>
+          </article>
+
+          <article class="tarjeta" data-marca="Head" data-precio="359.95" data-stock="1" data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+            <span class="insignia">Novedad</span>
+            <img src="images/headextremepro.png" alt="Head Extreme Pro 2026">
+            <h3>Head Extreme Pro 2026</h3>
+            <p class="precio">359,95 €</p>
+          </article>
+
+          <article class="tarjeta" data-marca="NOX" data-precio="389.95" data-stock="1" data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+            <span class="insignia">Novedad</span>
+            <img src="images/noxat10genius.png" alt="NOX AT10 Genius 12K">
+            <h3>NOX AT10 Genius 12K</h3>
+            <p class="precio">389,95 €</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor rejilla-footer">
+      <div>
+        <h4>Síguenos</h4>
+        <div class="sociales">
+          <a href="#">📷</a><a href="#">🐦</a><a href="#">📘</a><a href="#">▶️</a>
+        </div>
+        <p class="texto-peq">© 2026 PadelShop</p>
+      </div>
+      <div>
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="productos.html">Palas</a></li>
+          <li><a href="#zapatillas">Zapatillas</a></li>
+          <li><a href="#accesorios">Accesorios</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#envios">Envíos y devoluciones</a></li>
+          <li><a href="#tiendas">Tiendas y contacto</a></li>
+          <li><a href="#terminos">Términos y condiciones</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="#ayuda">Ayuda</a></li>
+          <li><a href="#soporte">Soporte técnico</a></li>
+          <li><a href="#garantia">Garantía</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="padelpro.js"></script>
+</body>
+</html>

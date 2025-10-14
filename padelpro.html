@@ -12,10 +12,10 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container nav">
-     <a class="logo" href="#">
-      <img src="images/lgo2.png" alt="PadelShop" />
-    </a>
+    <div class="contenedor navegacion">
+      <a class="logo" href="#">
+        <img src="images/lgo2.png" alt="PadelShop" />
+      </a>
 
       <nav class="menu">
         <a href="#palas">Palas de Pádel</a>
@@ -26,7 +26,7 @@
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <div class="icons">
+      <div class="iconos">
         <button aria-label="Mi cuenta" title="Mi cuenta">👤</button>
         <button aria-label="Carrito" title="Carrito">🛒</button>
       </div>
@@ -41,66 +41,61 @@
     </div>
 
     <!-- CARRUSEL -->
-    <section class="carousel" aria-label="Carrusel de portada">
-      <button class="ctrl prev" aria-label="Anterior">❮</button>
+    <section class="carrusel" aria-label="Carrusel de portada">
+      <button class="control anterior" aria-label="Anterior">❮</button>
 
-      <div class="track">
-        <!-- Cambia las imágenes a las tuyas -->
-        <div class="slide active">
-          <img src="images/banner1.jpg">
+      <div class="pista">
+        <div class="diapositiva activa">
+          <img src="images/banner1.jpg" alt="Banner principal 1">
         </div>
-        <div class="slide">
+        <div class="diapositiva">
           <img src="images/banner2.jpg" alt="Colección Bullpadel 2026 - pala 2">
         </div>
       </div>
 
-      <button class="ctrl next" aria-label="Siguiente">❯</button>
+      <button class="control siguiente" aria-label="Siguiente">❯</button>
 
-      <div class="dots" role="tablist" aria-label="Paginación carrusel">
-        <!-- Los puntitos se rellenan por JS -->
-      </div>
+      <div class="puntos" role="tablist" aria-label="Paginación carrusel"></div>
     </section>
 
-    <!-- NUESTRAS NOVEDADES -->
-    <section class="container" id="novedades">
-      <h2 class="section-title">Nuestras Novedades</h2>
+    <!-- NOVEDADES -->
+    <section class="contenedor" id="novedades">
+      <h2 class="titulo-seccion">Nuestras Novedades</h2>
 
-      <div class="products">
-        <!-- Tarjeta de producto (duplica/cambia a tu gusto) -->
-        <article class="card">
-          <span class="badge">Novedad</span>
+      <div class="productos">
+        <article class="tarjeta">
+          <span class="insignia">Novedad</span>
           <img src="images/noxat10genius.png" alt="NOX AT10 Genius 12K by Agustín Tapia">
           <h3>NOX AT10 Genius 12K by Agustín Tapia 2026</h3>
-          <p class="price">389,95 €</p>
+          <p class="precio">389,95 €</p>
         </article>
 
-        <article class="card">
-          <span class="badge">Novedad</span>
+        <article class="tarjeta">
+          <span class="insignia">Novedad</span>
           <img src="images/noxalumextreme.png" alt="NOX Alum Xtrem by Agustín Tapia">
           <h3>NOX Alum Xtrem by Agustín Tapia 2026</h3>
-          <p class="price">389,95 €</p>
+          <p class="precio">389,95 €</p>
         </article>
 
-        <article class="card">
-          <span class="badge">Novedad</span>
+        <article class="tarjeta">
+          <span class="insignia">Novedad</span>
           <img src="images/headextremepro.png" alt="Head Extreme Pro 2026">
           <h3>Head Extreme Pro 2026</h3>
-          <p class="price">359,95 €</p>
+          <p class="precio">359,95 €</p>
         </article>
 
-        <article class="card">
-          <span class="badge">Novedad</span>
+        <article class="tarjeta">
+          <span class="insignia">Novedad</span>
           <img src="images/bullpadelnueron.png" alt="BullPadel Neuron 02 2026">
           <h3>BullPadel Neuron 02 2026</h3>
-          <p class="price">339,95 €</p>
+          <p class="precio">339,95 €</p>
         </article>
       </div>
     </section>
 
-    <!-- VÍDEO (pon tu propio vídeo/pala) -->
-    <section class="container video-section">
-      <h2 class="section-title">Vídeo destacado</h2>
-      <!-- Sustituye el src por tu archivo o un embed -->
+    <!-- VÍDEO -->
+    <section class="contenedor seccion-video">
+      <h2 class="titulo-seccion">Vídeo destacado</h2>
       <video controls poster="images/Captura.PNG">
         <source src="images/BULLPADEL VERTEX 05_16_9.mp4" type="video/mp4">
         Tu navegador no soporta vídeo HTML5.
@@ -111,16 +106,13 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-grid">
-        <div>
+    <div class="contenedor rejilla-footer">
+      <div>
         <h4>Síguenos</h4>
-        <div class="social">
-          <a aria-label="Instagram" href="#">📷</a>
-          <a aria-label="Twitter" href="#">🐦</a>
-          <a aria-label="Facebook" href="#">📘</a>
-          <a aria-label="YouTube" href="#">▶️</a>
+        <div class="sociales">
+          <a href="#">📷</a><a href="#">🐦</a><a href="#">📘</a><a href="#">▶️</a>
         </div>
-        <p class="small">© 2026 PadelShop</p>
+        <p class="texto-peq">© 2026 PadelShop</p>
       </div>
       <div>
         <h4>Categorías</h4>
@@ -148,7 +140,6 @@
           <li><a href="#garantia">Garantía</a></li>
         </ul>
       </div>
-    
     </div>
   </footer>
 

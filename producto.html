@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pala BullPadel Wonder — Detalle</title>
+  <link rel="stylesheet" href="padelpro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="contenedor navegacion">
+      <a class="logo" href="index.html"><img src="images/lgo2.png" alt="PadelShop"></a>
+      <nav class="menu">
+        <a href="productos.html">Palas de Pádel</a>
+        <a href="#">Zapatillas</a>
+        <a href="#">Overgrips</a>
+        <a href="#">Ropa</a>
+        <a href="#">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="iconos">
+        <button title="Mi cuenta">👤</button>
+        <button title="Carrito" onclick="location.href='cesta.html'">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor ficha">
+
+    <!-- Caja principal -->
+    <section class="ficha-principal">
+      <div class="ficha-medios">
+        <img src="images/Captura5.PNG" alt="BullPadel Wonder" id="fotoPrincipal">
+      </div>
+
+      <div class="ficha-info">
+        <div class="pildoras" style="margin-bottom:8px">
+          <span class="pildora marca">BullPadel</span>
+          <span class="pildora">Novedad</span>
+        </div>
+
+        <h1 class="ficha-titulo">Pala BullPadel Wonder</h1>
+        <p class="ficha-precio">249,99 €</p>
+
+        <p class="ficha-aviso">
+          <strong>ATENCIÓN —</strong> Hay un descuento del 5% para productos de las categorías Pro Line, LTD Collection.
+        </p>
+
+        <!-- Compra rápida -->
+        <div class="ficha-compra">
+          <div class="ficha-fila">
+            <label for="cantidad">Cantidad</label>
+            <select id="cantidad">
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+            </select>
+          </div>
+
+          <div class="ficha-acciones">
+            <button class="btn-principal" id="btnAnadir">Añadir al carrito</button>
+            <button class="btn-secundario" id="btnComprar">Comprar ya</button>
+          </div>
+
+          <ul class="ficha-lista">
+            <li>Envío 24/48h</li>
+            <li>Devoluciones fáciles</li>
+            <li>2 años de garantía</li>
+          </ul>
+        </div>
+
+        <!-- Descripción corta -->
+        <div class="ficha-tarjeta">
+          <h3>Título</h3>
+          <p>
+            Te presentamos la nueva <strong>Wonder</strong>, la pala de Claudia Jensen. Un modelo con goma MultiEVA de dos densidades,
+            marco de carbono y caras Fibrix. La rugosidad <em>Top Spin</em> aumenta el efecto en el golpe y la tecnología
+            <em>Air React Channel</em> mejora la aerodinámica. Wonder ofrece una sensación de juego cómoda en todos los golpes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="ficha-resenas">
+      <h2>Últimas reseñas</h2>
+
+      <div class="rejilla-resenas">
+        <article class="resena">
+          <div class="estrellas">★★★★★</div>
+          <h4>Excelente control y potencia</h4>
+          <p>
+            Vengo de una pala intermedia con balance perfecto. Esta me permite tener más control sin perder potencia en remates.
+            Muy recomendable para jugadores intermedios y avanzados.
+          </p>
+          <div class="usuario-resena">
+            <img src="images/user1.png" alt="" />
+            <span>María L. · 12/09/2025</span>
+          </div>
+        </article>
+
+        <article class="resena">
+          <div class="estrellas">★★★★☆</div>
+          <h4>Ligera y cómoda</h4>
+          <p>
+            Lo que más me gusta es la salida de bola y el tacto. No fatiga el brazo. La fibra mixta perdona los golpes no perfectos.
+          </p>
+          <div class="usuario-resena">
+            <img src="images/user2.png" alt="" />
+            <span>Marta P. · 25/09/2025</span>
+          </div>
+        </article>
+
+        <article class="resena">
+          <div class="estrellas">★★★★★</div>
+          <h4>Gran relación calidad-precio</h4>
+          <p>
+            Dudaba con la marca, pero la Wonder me ha sorprendido. Aprecia bien los efectos y la pegada es muy buena. Diseño precioso.
+          </p>
+          <div class="usuario-resena">
+            <img src="images/user3.png" alt="" />
+            <span>J. Álvarez · 28/09/2025</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="boletin">
+      <h3>Sigue las últimas tendencias</h3>
+      <p>Con nuestro catálogo diario</p>
+      <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+        <input type="email" required placeholder="tu@padelpro.com">
+        <button class="btn-principal">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="contenedor rejilla-footer">
+      <div>
+        <h4>Síguenos</h4>
+        <div class="sociales">
+          <a href="#">📷</a><a href="#">🐦</a><a href="#">📘</a><a href="#">▶️</a>
+        </div>
+        <p class="texto-peq">© 2026 PadelShop</p>
+      </div>
+      <div>
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="productos.html">Palas</a></li>
+          <li><a href="#">Zapatillas</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Seguimiento de pedido</a></li>
+          <li><a href="#">Garantía de productos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="padelpro.js"></script>
+</body>
+</html>
