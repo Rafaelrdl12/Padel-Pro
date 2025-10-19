@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,10 +8,13 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"><!--Libreia iconos google-->
+
 </head>
+
 <body>
 
-  
+
   <header class="header">
     <div class="contenedor navegacion">
       <a class="logo" href="#">
@@ -39,7 +43,7 @@
       Si no sabes qué regalar, regala <strong>Padel Pro</strong> con las nuevas <u>tarjetas regalo</u>.
     </div>
 
-    
+
     <section class="carrusel" aria-label="Carrusel de portada">
       <button class="control anterior" aria-label="Anterior">❮</button>
 
@@ -57,42 +61,42 @@
       <div class="puntos" role="tablist" aria-label="Paginación carrusel"></div>
     </section>
 
-   
+
     <section class="contenedor" id="novedades">
       <h2 class="titulo-seccion">Nuestras Novedades</h2>
 
       <div class="productos">
-        <article class="tarjeta">
+        <a href="productos.html" class="tarjeta">
           <span class="insignia">Novedad</span>
           <img src="images/noxagus.png" alt="NOX AT10 Genius 12K by Agustín Tapia">
           <h3>NOX AT10 Genius 12K by Agustín Tapia 2026</h3>
           <p class="precio">389,95 €</p>
-        </article>
+        </a>
 
-        <article class="tarjeta">
+        <a href="productos.html" class="tarjeta">
           <span class="insignia">Novedad</span>
           <img src="images/noxextreme.png" alt="NOX Alum Xtrem by Agustín Tapia">
           <h3>NOX Alum Xtrem by Agustín Tapia 2026</h3>
           <p class="precio">389,95 €</p>
-        </article>
+        </a>
 
-        <article class="tarjeta">
+        <a href="productos.html" class="tarjeta">
           <span class="insignia">Novedad</span>
           <img src="images/headextreme.png" alt="Head Extreme Pro 2026">
           <h3>Head Extreme Pro 2026</h3>
           <p class="precio">359,95 €</p>
-        </article>
+        </a>
 
-        <article class="tarjeta">
+        <a href="productos.html" class="tarjeta">
           <span class="insignia">Novedad</span>
           <img src="images/bullpadelneuron.png" alt="BullPadel Neuron 02 2026">
           <h3>BullPadel Neuron 02 2026</h3>
           <p class="precio">339,95 €</p>
-        </article>
+        </a>
       </div>
     </section>
 
- 
+
     <section class="contenedor seccion-video">
       <h2 class="titulo-seccion">Vídeo destacado</h2>
       <video controls poster="images/Captura.PNG">
@@ -108,8 +112,20 @@
     <div class="contenedor rejilla-footer">
       <div>
         <h4>Síguenos</h4>
+
         <div class="sociales">
-          <a href="#">📷</a><a href="#">🐦</a><a href="#">📘</a><a href="#">▶️</a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" title="Twitter">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+          <a href="https://facebook.com" target="_blank" title="Facebook">
+            <span class="material-symbols-outlined">group</span>
+          </a>
+          <a href="https://youtube.com" target="_blank" title="YouTube">
+            <span class="material-symbols-outlined">smart_display</span>
+          </a>
         </div>
         <p class="texto-peq">© 2026 PadelShop</p>
       </div>
@@ -144,4 +160,5 @@
 
   <script src="padelpro.js"></script>
 </body>
+
 </html>

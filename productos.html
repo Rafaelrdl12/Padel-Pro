@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,7 +8,10 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <!--Fuente tipografica-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"><!--Libreia iconos google-->
 </head>
+
 <body>
 
 
@@ -79,7 +83,8 @@
           <summary>Nivel</summary>
           <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="iniciación"> Iniciación</label>
           <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="medio"> Medio</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="competición"> Competición</label>
+          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="competición">
+            Competición</label>
         </details>
 
         <details open>
@@ -107,45 +112,56 @@
 
       <section>
         <div class="productos" id="rejilla">
-    
-          <article class="tarjeta" data-marca="BullPadel" data-precio="339.90" data-stock="1" data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+
+          <a href="producto-bullpadelneuron.html" class="tarjeta" data-marca="BullPadel" data-precio="339.90"
+            data-stock="1" data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque"
+            data-genero="hombre">
             <span class="insignia">Novedad</span>
             <img src="images/bullpadelneuron.png" alt="BullPadel Neuron 02 2026">
             <h3>BullPadel Neuron 02</h3>
             <p class="precio">339,90 €</p>
-          </article>
+          </a>
 
-          <article class="tarjeta" data-marca="BullPadel" data-precio="279.99" data-stock="1" data-tipo="control" data-peso="ligera" data-nivel="medio" data-juego="defensa" data-genero="mujer">
+          <a href="producto-bullpadelvertex.html" class="tarjeta" data-marca="BullPadel" data-precio="279.99"
+            data-stock="1" data-tipo="control" data-peso="ligera" data-nivel="medio" data-juego="defensa"
+            data-genero="mujer">
             <img src="images/bullpadelvertex04.png" alt="BullPadel Vertex 04">
             <h3>BullPadel Vertex 04</h3>
             <p class="precio">279,99 €</p>
-          </article>
+          </a>
 
-          <article class="tarjeta" data-marca="BullPadel" data-precio="319.90" data-stock="0" data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+          <a href="producto-bullpadelwonder.html" class="tarjeta" data-marca="BullPadel" data-precio="319.90"
+            data-stock="0" data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque"
+            data-genero="hombre">
             <img src="images/bullpadelwonder.png" alt="BullPadel Wonder">
             <h3>BullPadel Wonder</h3>
             <p class="precio">319,90 €</p>
-          </article>
+          </a>
 
-          <article class="tarjeta" data-marca="NOX" data-precio="189.99" data-stock="1" data-tipo="control" data-peso="ligera" data-nivel="iniciación" data-juego="defensa" data-genero="mujer">
+          <a href="producto-noxextreme.html" class="tarjeta" data-marca="NOX" data-precio="189.99" data-stock="1"
+            data-tipo="control" data-peso="ligera" data-nivel="iniciación" data-juego="defensa" data-genero="mujer">
+            <span class="insignia">Novedad</span>
             <img src="images/noxextreme.png" alt="NOX Extreme">
             <h3>Nox Extreme</h3>
             <p class="precio">189,99 €</p>
-          </article>
+          </a>
 
-          <article class="tarjeta" data-marca="Head" data-precio="359.95" data-stock="1" data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+          <a href="producto-headextreme.html" class="tarjeta" data-marca="Head" data-precio="359.95" data-stock="1"
+            data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
             <span class="insignia">Novedad</span>
             <img src="images/headextreme.png" alt="Head Extreme Pro 2026">
             <h3>Head Extreme Pro 2026</h3>
             <p class="precio">359,95 €</p>
-          </article>
+          </a>
 
-          <article class="tarjeta" data-marca="NOX" data-precio="389.95" data-stock="1" data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
+          <a href="producto-noxat10.html" class="tarjeta" data-marca="NOX" data-precio="389.95" data-stock="1"
+            data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
             <span class="insignia">Novedad</span>
             <img src="images/noxagus.png" alt="NOX AT10 Genius 12K">
             <h3>NOX AT10 Genius 12K</h3>
             <p class="precio">389,95 €</p>
-          </article>
+          </a>
+
         </div>
       </section>
     </div>
@@ -156,8 +172,20 @@
       <div>
         <h4>Síguenos</h4>
         <div class="sociales">
-          <a href="#">📷</a><a href="#">🐦</a><a href="#">📘</a><a href="#">▶️</a>
+          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" title="Twitter">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+          <a href="https://facebook.com" target="_blank" title="Facebook">
+            <span class="material-symbols-outlined">group</span>
+          </a>
+          <a href="https://youtube.com" target="_blank" title="YouTube">
+            <span class="material-symbols-outlined">smart_display</span>
+          </a>
         </div>
+
         <p class="texto-peq">© 2026 PadelShop</p>
       </div>
       <div>
@@ -191,4 +219,5 @@
 
   <script src="padelpro.js"></script>
 </body>
+
 </html>

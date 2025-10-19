@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pala BullPadel Vertex 04 — Detalle</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"><!--Libreia iconos google-->
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor navegacion">
+      <a class="logo" href="index.html"><img src="images/lgo2.png" alt="PadelShop"></a>
+      <nav class="menu">
+        <a href="productos.html">Palas de Pádel</a>
+        <a href="#">Zapatillas</a>
+        <a href="#">Overgrips</a>
+        <a href="#">Ropa</a>
+        <a href="#">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="iconos">
+        <button title="Mi cuenta">👤</button>
+        <button title="Carrito" onclick="location.href='cesta.html'">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor ficha">
+
+    <section class="ficha-principal">
+      <div class="ficha-medios">
+        <img src="images/bullpadelvertex04.png" alt="BullPadel Vertex 04" id="fotoPrincipal">
+      </div>
+
+      <div class="ficha-info">
+        <div class="pildoras" style="margin-bottom:8px">
+          <span class="pildora marca">BullPadel</span>
+          <span class="pildora">Control</span>
+        </div>
+
+        <h1 class="ficha-titulo">Pala BullPadel Vertex 04</h1>
+        <p class="ficha-precio">279,99 €</p>
+
+        <p class="ficha-aviso">
+          <strong>ATENCIÓN —</strong> Modelo ligero recomendado para sesiones largas sin fatiga.
+        </p>
+
+        <div class="ficha-compra">
+          <div class="ficha-fila">
+            <label for="cantidad">Cantidad</label>
+            <select id="cantidad">
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+            </select>
+          </div>
+
+          <div class="ficha-acciones">
+            <button class="btn-principal" id="btnAnadir">Añadir al carrito</button>
+            <button class="btn-secundario" id="btnComprar">Comprar ya</button>
+          </div>
+
+          <ul class="ficha-lista">
+            <li>Envío 24/48h</li>
+            <li>Devoluciones fáciles</li>
+            <li>2 años de garantía</li>
+          </ul>
+        </div>
+
+        <div class="ficha-tarjeta">
+          <h3>Título</h3>
+          <p>
+            La <strong>Vertex 04</strong> prioriza el control y el confort. Núcleo <em>MultiEVA</em> de doble densidad,
+            marco de carbono y cara con textura para un efecto más marcado. Ideal para jugadoras de nivel medio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ficha-resenas">
+      <h2>Últimas reseñas</h2>
+
+      <div class="rejilla-resenas">
+        <article class="resena">
+          <div class="estrellas">★★★★★</div>
+          <h4>Muy cómoda</h4>
+          <p>
+            No cansa el brazo y permite dirigir la bola con facilidad. Gran control en bloqueos y voleas.
+          </p>
+          <div class="usuario-resena">
+            <img src="images/marial.png" alt="" />
+            <span>María L. · 05/10/2025</span>
+          </div>
+        </article>
+
+        <article class="resena">
+          <div class="estrellas">★★★★☆</div>
+          <h4>Buen toque</h4>
+          <p>
+            Tacto suave y perdona errores. Quizá le falta un poco de potencia para rematar lejos.
+          </p>
+          <div class="usuario-resena">
+            <img src="images/martap.png" alt="" />
+            <span>Marta P. · 09/10/2025</span>
+          </div>
+        </article>
+
+        <article class="resena">
+          <div class="estrellas">★★★★★</div>
+          <h4>Control total</h4>
+          <p>
+            Excelente en bandejas y globos. La recomendaría a quien quiera precisión por encima de potencia.
+          </p>
+          <div class="usuario-resena">
+            <img src="images/jalvarez.png" alt="" />
+            <span>J. Álvarez · 15/10/2025</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="boletin">
+      <h3>Sigue las últimas tendencias</h3>
+      <p>Con nuestro catálogo diario</p>
+      <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+        <input type="email" required placeholder="tu@gmail.com">
+        <button class="btn-principal">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor rejilla-footer">
+      <div>
+        <h4>Síguenos</h4>
+       <h4>Síguenos</h4>
+        <div class="sociales">
+          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" title="Twitter">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+          <a href="https://facebook.com" target="_blank" title="Facebook">
+            <span class="material-symbols-outlined">group</span>
+          </a>
+          <a href="https://youtube.com" target="_blank" title="YouTube">
+            <span class="material-symbols-outlined">smart_display</span>
+          </a>
+        </div>
+        <p class="texto-peq">© 2026 PadelShop</p>
+      </div>
+      <div>
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="productos.html">Palas</a></li>
+          <li><a href="#">Zapatillas</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="#">Seguimiento de pedido</a></li>
+          <li><a href="#">Garantía de productos</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="padelpro.js"></script>
+</body>
+</html>
