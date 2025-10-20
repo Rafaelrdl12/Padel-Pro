@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cesta — PadelPro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="contenedor navegacion">
+      <a class="logo" href="index.html"><img src="images/lgo2.png" alt="PadelPro" class="logo-img"></a>
+      <nav class="menu">
+        <a href="productos.html">Palas de Pádel</a>
+        <a href="#">Zapatillas</a>
+        <a href="#">Ropa</a>
+        <a href="#">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <div class="iconos">
+        <button title="Mi cuenta">👤</button>
+        <button title="Carrito">🛒 (2)</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor pagina-carrito">
+    <section class="caja-carrito">
+      <ul id="listaCarrito" class="lista-carrito">
+        <li class="item-carrito">
+          <img src="images/bullpadelwonder.png" alt="Pala BullPadel Wonder">
+          <div class="info-item">
+            <div class="nombre-item">Pala BullPadel Wonder</div>
+            <div>Cantidad: 1</div>
+          </div>
+          <div class="precio-item">319,90 €</div>
+        </li>
+
+        <li class="item-carrito">
+          <img src="images/noxagus.png" alt="Overgrip Nox Pro">
+          <div class="info-item">
+            <div class="nombre-item">Nox Extreme</div>
+            <div>Cantidad: 1</div>
+          </div>
+          <div class="precio-item">189,99 €</div>
+        </li>
+      </ul>
+
+      <div class="total-carrito">
+        Total = <span id="totalCarrito">509,89 €</span><br>
+        <button id="btnPagar" class="btn-principal">Pagar ya</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor rejilla-footer">
+      <p>© 2026 PadelPro — Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
