@@ -102,6 +102,15 @@ body {
 .menu a.activa {
   background: #eef8ff
 }
+a {
+  color: inherit;           
+  text-decoration: none;    
+}
+
+a:hover {
+  color: #0077b6;           
+  text-decoration: underline;
+}
 
 .iconos {
   display: flex;
@@ -938,5 +947,6 @@ main {
     height: 220px
   }
 }
+
 
 
