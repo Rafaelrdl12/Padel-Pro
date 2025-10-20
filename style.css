@@ -8,7 +8,8 @@
   --container: 1200px;
 }
 
-/* --- Layout base: footer pegado abajo --- */
+
+
 html,
 body {
   height: 100%;
@@ -24,7 +25,7 @@ main {
   flex: 1;
 }
 
-/* empuja el footer hacia abajo */
+
 .footer {
   margin-top: auto;
 }
@@ -322,16 +323,45 @@ body {
   text-decoration: underline
 }
 
-.sociales {
-  display: flex;
-  gap: 10px;
-  font-size: 22px
+/* === Footer: centrar columna y alinear iconos === */
+
+
+.rejilla-footer > div {
+  text-align: center;
 }
 
-.texto-peq {
-  color: #9ca3af;
-  margin-top: 10px
+.sociales{
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  gap: 14px;
+  margin: 6px 0 8px;
 }
+
+
+.sociales a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;   
+  height: 28px;
+  text-decoration: none;
+}
+
+
+.material-symbols-outlined{
+  display: block;          
+  line-height: 1;           
+  font-size: 20px;          
+  font-optical-sizing: none;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+
+.texto-peq{
+  text-align: center;
+}
+
 
 /* RESPONSIVE */
 @media (max-width:1000px) {
@@ -908,3 +938,5 @@ main {
     height: 220px
   }
 }
+
+
