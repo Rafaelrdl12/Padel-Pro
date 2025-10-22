@@ -948,5 +948,44 @@ main {
   }
 }
 
+/* ===== Licencia Creative Commons en footer ===== */
+.licencia-cc {
+  margin-top: 10px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: 12px;
+}
+
+.licencia-cc p {
+  margin: 0;
+  display: inline-flex;
+  gap: .35rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  color: #cbd5e1;
+}
+
+.footer .licencia-cc a {
+  color: #93c5fd;          
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer .licencia-cc a:hover {
+  text-decoration: underline;
+}
+
+.cc-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -2px;
+  opacity: .9;
+  transition: opacity .2s ease;
+}
+
+.cc-icon:hover { opacity: 1; }
+
+
 
 
