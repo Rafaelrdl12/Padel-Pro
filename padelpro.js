@@ -41,5 +41,29 @@ if (carrusel){
 /* Arranque */
 actualizarUI();
 
+/* ===== Sonido al pulsar el logo para ir al inicio ===== */
+document.addEventListener('DOMContentLoaded', () => {
+  const fx   = document.getElementById('fx-transicion');
+  const logo = document.querySelector('a.logo'); // tu HTML: <a class="logo" href="#"><img ...></a>
 
+  if (!fx || !logo) return;
+
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const irInicio = () => {
+      const yaEnInicio = location.pathname.endsWith('index.html') || location.pathname === '/';
+      if (!yaEnInicio) setTimeout(() => (window.location.href = 'index.html'), 700);
+    };
+
+    try {
+      fx.currentTime = 0;
+      const p = fx.play();
+      if (p && typeof p.then === 'function') p.then(irInicio).catch(irInicio);
+      else irInicio();
+    } catch (_) {
+      irInicio();
+    }
+  });
+});
 
