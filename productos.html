@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tienda Pádel — Productos</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="scss/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <!--Fuente tipografica-->
@@ -26,7 +26,7 @@
 
       <nav class="menu">
         <a href="productos.html" class="activa">Palas de Pádel</a>
-        <a href="#zapatillas">Zapatillas</a>
+        <a href="zapatillas.html">Zapatillas</a>
         <a href="#overgrips">Overgrips</a>
         <a href="#ropa">Ropa</a>
         <a href="#ofertas">Ofertas</a>
@@ -34,7 +34,10 @@
       </nav>
 
       <div class="iconos">
-        <button aria-label="Mi cuenta" title="Mi cuenta">👤</button>
+        <a href="login.html" aria-label="Mi cuenta" title="Mi cuenta" class="icono-cuenta">
+          👤
+        </a>
+
         <button aria-label="Carrito" title="Carrito" onclick="location.href='carrito.html'">🛒</button>
       </div>
     </div>
@@ -123,6 +126,7 @@
             <img src="images/bullpadelneuron.png" alt="BullPadel Neuron 02 2026">
             <h3>BullPadel Neuron 02</h3>
             <p class="precio">339,90 €</p>
+
           </a>
 
           <a href="producto-bullpadelvertex.html" class="tarjeta" data-marca="BullPadel" data-precio="279.99"
@@ -195,7 +199,7 @@
         <h4>Categorías</h4>
         <ul>
           <li><a href="productos.html">Palas</a></li>
-          <li><a href="#zapatillas">Zapatillas</a></li>
+          <li><a href="zapatillas.html">Zapatillas</a></li>
           <li><a href="#accesorios">Accesorios</a></li>
           <li><a href="#ofertas">Ofertas</a></li>
         </ul>

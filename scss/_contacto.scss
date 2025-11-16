@@ -1,0 +1,44 @@
+/* ====== CONTACTO ====== */
+.titulo-pagina {
+  text-align: center;
+  font-size: 2rem;
+  margin: 24px 0 12px 0;
+}
+
+.pagina-contacto {
+  padding-bottom: 20px;
+}
+
+.tarjeta-contacto {
+  max-width: 440px;
+  margin: 0 auto;
+  border: 2px solid #e5eff8;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.tarjeta-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarjeta-contacto input,
+.tarjeta-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e5eff8;
+  border-radius: 10px;
+}
+
+.tarjeta-contacto .casilla {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.tarjeta-contacto .btn-principal {
+  width: 100%;
+}

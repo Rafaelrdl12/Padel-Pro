@@ -1,0 +1,87 @@
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 3px solid var(--accent);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #111;
+  font-size: 1.25rem;
+}
+
+.logo img,
+.logo-img {
+  height: 60px;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #111;
+  text-decoration: none;
+  padding: 8px 6px;
+  border-radius: 8px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  background: #eef8ff;
+}
+
+.menu a.activa {
+  background: #eef8ff;
+}
+
+.iconos {
+  display: flex;
+  gap: 8px;
+}
+
+.iconos button {
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.iconos button:hover {
+  background: #f3f4f6;
+}
+
+/* AVISO PROMO */
+.promo {
+  text-align: center;
+  font-size: 0.9rem;
+  background: #111;
+  color: #fff;
+  padding: 8px 12px;
+}

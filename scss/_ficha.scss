@@ -1,0 +1,210 @@
+/* ===========================
+   FICHA DE PRODUCTO (PDP)
+   =========================== */
+.ficha {
+  margin-top: 18px;
+}
+
+.ficha-principal {
+  border: 2px solid #e5eff8;
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 420px 1fr;
+}
+
+.ficha-medios {
+  padding: 10px;
+  border: 2px dashed #e5eff8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafcff;
+}
+
+.ficha-medios img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ficha-info .pildora {
+  border: 2px solid #e5eff8;
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.ficha-info .pildora.marca {
+  background: #eaffea;
+  border-color: #bde5bd;
+  font-weight: 700;
+}
+
+.ficha-titulo {
+  margin: 6px 0 2px 0;
+  font-size: 1.6rem;
+}
+
+.ficha-precio {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 6px 0 12px 0;
+}
+
+.ficha-aviso {
+  border: 2px solid #ffe8a3;
+  background: #fff9e6;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.ficha-compra {
+  border: 2px solid #e5eff8;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.ficha-fila {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ficha-fila select {
+  padding: 8px;
+  border: 2px solid #e5eff8;
+  border-radius: 10px;
+}
+
+.ficha-acciones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-principal {
+  background: #0077b6; /* color que también usarás en bootstrap */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.btn-secundario {
+  background: #fff;
+  border: 2px solid #e5eff8;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.ficha-lista {
+  margin: 6px 0 0 18px;
+  font-size: 0.95rem;
+}
+
+.ficha-lista li {
+  list-style: disc;
+}
+
+.ficha-tarjeta {
+  border: 2px solid #e5eff8;
+  border-radius: 12px;
+  padding: 10px;
+  background: #fff;
+}
+
+.ficha-tarjeta h3 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+.ficha-resenas {
+  margin: 22px 0;
+}
+
+.ficha-resenas h2 {
+  margin-bottom: 12px;
+}
+
+.rejilla-resenas {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.resena {
+  border: 2px solid #e5eff8;
+  border-radius: 12px;
+  background: #fff;
+  padding: 12px;
+}
+
+.resena .estrellas {
+  letter-spacing: 2px;
+}
+
+.resena h4 {
+  margin: 6px 0;
+}
+
+.usuario-resena {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.usuario-resena img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.boletin {
+  border: 2px dashed #e5eff8;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+  background: #fafcff;
+}
+
+.form-boletin {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.form-boletin input {
+  padding: 10px;
+  border: 2px solid #e5eff8;
+  border-radius: 10px;
+  min-width: 260px;
+}
+
+@media (max-width: 1000px) {
+  .ficha-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .rejilla-resenas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .rejilla-resenas {
+    grid-template-columns: 1fr;
+  }
+}

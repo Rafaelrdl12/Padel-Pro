@@ -5,61 +5,136 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cesta — PadelPro</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- TU CSS -->
+  <link rel="stylesheet" href="scss/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <link rel="icon" type="images/x-ico" href="/images/lgo2.ico">
-
+  <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
 </head>
 
 <body>
 
+  <!-- NAVBAR IGUAL QUE INDEX -->
   <header class="header">
-    <div class="contenedor navegacion">
-      <a class="logo" href="index.html"><img src="images/lgo2.png" alt="PadelPro" class="logo-img"></a>
-      <nav class="menu">
-        <a href="productos.html">Palas de Pádel</a>
-        <a href="#">Zapatillas</a>
-        <a href="#">Ropa</a>
-        <a href="#">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <div class="iconos">
-        <button title="Mi cuenta">👤</button>
-        <button title="Carrito">🛒 (2)</button>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container contenedor navegacion">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/lgo2.png" alt="PadelPro" class="logo-img">
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Mostrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto menu">
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Palas de Pádel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zapatillas.html">Zapatillas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#overgrips">Overgrips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ropa">Ropa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ofertas">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <!-- Iconos derecha -->
+          <div class="d-flex iconos gap-2">
+            <button class="btn btn-outline-secondary" title="Mi cuenta"
+              onclick="location.href='login.html'">👤</button>
+            <button class="btn btn-primary" title="Carrito"
+              onclick="location.href='carrito.html'">🛒 (2)</button>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </nav>
   </header>
 
-  <main class="contenedor pagina-carrito">
-    <section class="caja-carrito">
-      <ul id="listaCarrito" class="lista-carrito">
-        <li class="item-carrito">
-          <img src="images/bullpadelwonder.png" alt="Pala BullPadel Wonder">
-          <div class="info-item">
-            <div class="nombre-item">Pala BullPadel Wonder</div>
-            <div>Cantidad: 1</div>
-          </div>
-          <div class="precio-item">319,90 €</div>
-        </li>
+  <!-- CONTENIDO CARRITO -->
+  <main class="py-4">
+    <div class="container contenedor pagina-carrito">
 
-        <li class="item-carrito">
-          <img src="images/noxagus.png" alt="Overgrip Nox Pro">
-          <div class="info-item">
-            <div class="nombre-item">Nox Extreme</div>
-            <div>Cantidad: 1</div>
-          </div>
-          <div class="precio-item">189,99 €</div>
-        </li>
-      </ul>
+      <section class="caja-carrito card border-0 shadow-sm">
+        <ul id="listaCarrito" class="lista-carrito">
+          <li class="item-carrito">
+            <img src="images/bullpadelwonder.png" alt="Pala BullPadel Wonder">
+            <div class="info-item">
+              <div class="nombre-item">Pala BullPadel Wonder</div>
+              <div>Cantidad: 1</div>
+            </div>
+            <div class="precio-item">319,90 €</div>
+          </li>
 
-      <div class="total-carrito">
-        Total = <span id="totalCarrito">509,89 €</span><br>
-        <button id="btnPagar" class="btn-principal">Pagar ya</button>
-      </div>
-    </section>
+          <li class="item-carrito">
+            <img src="images/noxextreme.png" alt="Nox Extreme">
+            <div class="info-item">
+              <div class="nombre-item">Nox Extreme</div>
+              <div>Cantidad: 1</div>
+            </div>
+            <div class="precio-item">189,99 €</div>
+          </li>
+        </ul>
+
+        <div class="total-carrito">
+          Total = <span id="totalCarrito">509,89 €</span><br>
+          <!-- Botón que abre el modal -->
+          <button id="btnPagar"
+                  class="btn-principal mt-2"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalPago">
+            Pagar ya
+          </button>
+        </div>
+      </section>
+
+    </div>
   </main>
 
+  <!-- MODAL DE PAGO -->
+  <div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPagoLabel">¡Pago realizado!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Tu pedido se ha procesado correctamente. En unos minutos recibirás un correo
+            con el resumen de la compra.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="productos.html" class="btn btn-outline-secondary">Seguir comprando</a>
+          <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER IGUAL QUE OTRAS PÁGINAS -->
   <footer class="footer">
     <div class="contenedor rejilla-footer">
       <div>
@@ -86,7 +161,7 @@
         <h4>Categorías</h4>
         <ul>
           <li><a href="productos.html">Palas</a></li>
-          <li><a href="#">Zapatillas</a></li>
+          <li><a href="zapatillas.html">Zapatillas</a></li>
           <li><a href="#">Accesorios</a></li>
         </ul>
       </div>
@@ -107,7 +182,7 @@
         </ul>
       </div>
     </div>
-    <!-- Licencia Creative Commons -->
+
     <div class="licencia-cc contenedor">
       <p>
         <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
@@ -123,6 +198,8 @@
     </div>
   </footer>
 
-</body>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>

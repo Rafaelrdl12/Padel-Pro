@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PadelPro — Zapatillas de pádel</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+<link rel="stylesheet" href="scss/main.css">
+
+  <!-- Fuentes e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
+</head>
+
+<body>
+
+  <!-- NAVBAR BOOTSTRAP IGUAL QUE INDEX (ZAPATILLAS ACTIVA) -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container contenedor navegacion">
+
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/lgo2.png" alt="PadelPro">
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Mostrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto menu">
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Palas de Pádel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activa" href="zapatillas.html">Zapatillas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#overgrips">Overgrips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ropa">Ropa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ofertas">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <!-- Iconos derecha -->
+          <div class="d-flex iconos gap-2">
+            <button class="btn btn-outline-secondary" title="Mi cuenta"
+              onclick="location.href='login.html'">👤</button>
+            <button class="btn btn-primary" title="Carrito"
+              onclick="location.href='carrito.html'">🛒</button>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-4">
+    <div class="container contenedor">
+
+      <!-- BARRA DE BÚSQUEDA + PÍLDORAS (BOOTSTRAP) -->
+      <div class="row mb-4 align-items-center">
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+          <input type="search" class="form-control" placeholder="Buscar zapatilla...">
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="btn-group w-100" role="group" aria-label="Ordenar">
+            <button type="button" class="btn btn-outline-secondary active">✔ Novedades</button>
+            <button type="button" class="btn btn-outline-secondary">Precio Ascendente</button>
+            <button type="button" class="btn btn-outline-secondary">Precio Descendente</button>
+            <button type="button" class="btn btn-outline-secondary">En stock</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA PRINCIPAL: FILTROS + PRODUCTOS -->
+      <div class="row">
+
+        <!-- COLUMNA FILTROS (IZQUIERDA) -->
+        <aside class="col-12 col-lg-3 mb-4 mb-lg-0">
+          <div class="border bg-white rounded-4 p-3 shadow-sm">
+            <h3 class="h5 mb-3">Filtrar por</h3>
+
+            <!-- Tipo -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Tipo</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tipoHombre">
+                <label class="form-check-label" for="tipoHombre">Hombre</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tipoMujer">
+                <label class="form-check-label" for="tipoMujer">Mujer</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tipoUnisex">
+                <label class="form-check-label" for="tipoUnisex">Unisex</label>
+              </div>
+            </div>
+
+            <!-- Suela -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Suela</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="suelaClay">
+                <label class="form-check-label" for="suelaClay">Clay</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="suelaOmni">
+                <label class="form-check-label" for="suelaOmni">Omni</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="suelaDura">
+                <label class="form-check-label" for="suelaDura">Pista dura</label>
+              </div>
+            </div>
+
+            <!-- Marcas -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Marcas</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaBull">
+                <label class="form-check-label" for="marcaBull">BullPadel</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaNox">
+                <label class="form-check-label" for="marcaNox">Nox</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaHead">
+                <label class="form-check-label" for="marcaHead">Head</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaAsics">
+                <label class="form-check-label" for="marcaAsics">Asics</label>
+              </div>
+            </div>
+
+            <!-- Nivel -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Nivel</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nivelIni">
+                <label class="form-check-label" for="nivelIni">Iniciación</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nivelMedio">
+                <label class="form-check-label" for="nivelMedio">Medio</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nivelComp">
+                <label class="form-check-label" for="nivelComp">Competición</label>
+              </div>
+            </div>
+
+            <!-- Precio -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Precio</p>
+              <input type="range" class="form-range" min="0" max="200" value="200" id="rangoPrecioZapas">
+              <small class="text-muted">0 € – 200 €</small>
+            </div>
+
+            <button class="btn btn-outline-secondary w-100 mt-2">
+              Limpiar filtros
+            </button>
+          </div>
+        </aside>
+
+        <!-- COLUMNA PRODUCTOS (DERECHA) -->
+        <section class="col-12 col-lg-9">
+          <div class="row g-4">
+
+            <!-- Zapatilla 1 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <span class="insignia">Novedad</span>
+                <img src="images/asics azul.png" class="card-img-top" alt="Bullpadel Hack Knit 2026">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Asics Padel Strike Pro 2026</h3>
+                  <p class="mb-1 text-muted">Hombre · Suela clay</p>
+                  <p class="precio mb-2">119,95 €</p>
+                   <button class="btn btn-outline-primary w-100">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zapatilla 2 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <span class="insignia">Novedad</span>
+                <img src="images/wilsonrosa.png" class="card-img-top" alt="Bullpadel Flow Hybrid 2026">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Wilson AeroCourt Hybrid 2026</h3>
+                  <p class="mb-1 text-muted">Mujer · Máxima amortiguación</p>
+                  <p class="precio mb-2">129,95 €</p>
+                   <button class="btn btn-outline-primary w-100">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zapatilla 3 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <img src="images/asics morada.png" class="card-img-top" alt="Nox AT10 Lux 2026">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Asics Motion Control Lux 2026</h3>
+                  <p class="mb-1 text-muted">Unisex · Estabilidad extra</p>
+                  <p class="precio mb-2">114,95 €</p>
+                  <button class="btn btn-outline-primary w-100">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zapatilla 4 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <img src="images/blastpad.png" class="card-img-top" alt="Asics Gel Padel Elite">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Venox Rapid Elite 2026</h3>
+                  <p class="mb-1 text-muted">Hombre · Alta tracción</p>
+                  <p class="precio mb-2">89,95 €</p>
+                  <button class="btn btn-outline-primary w-100">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zapatilla 5 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <img src="images/ralloblanca.png" class="card-img-top" alt="Head Motion Pro 2026">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Kiron Velocity Pro 2026</h3>
+                  <p class="mb-1 text-muted">Unisex · Pistas rápidas</p>
+                  <p class="precio mb-2">104,95 €</p>
+                  <button class="btn btn-outline-primary w-100">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zapatilla 6 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <img src="images/ralloverde.png" class="card-img-top" alt="Nox ML10 Comfort">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Auralite Comfort Drive 2026</h3>
+                  <p class="mb-1 text-muted">Unisex · Confort total</p>
+                  <p class="precio mb-2">99,95 €</p>
+                  <button class="btn btn-outline-primary w-100">Ver detalles</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER IGUAL QUE INDEX -->
+  <footer class="footer">
+    <div class="contenedor rejilla-footer">
+      <div>
+        <h4>Síguenos</h4>
+
+        <nav class="sociales" aria-label="Redes sociales">
+          <a class="social" href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a class="social" href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+          <a class="social" href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
+            <span class="material-symbols-outlined">group</span>
+          </a>
+          <a class="social" href="https://youtube.com" target="_blank" title="YouTube" rel="noopener">
+            <span class="material-symbols-outlined">smart_display</span>
+          </a>
+        </nav>
+
+        <p class="texto-peq">© 2026 PadelShop</p>
+      </div>
+      <div>
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="productos.html">Palas</a></li>
+          <li><a href="zapatillas.html">Zapatillas</a></li>
+          <li><a href="#accesorios">Accesorios</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#envios">Envíos y devoluciones</a></li>
+          <li><a href="#tiendas">Tiendas y contacto</a></li>
+          <li><a href="#terminos">Términos y condiciones</a></li>
+          <li><a href="#privacidad">Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="#ayuda">Ayuda</a></li>
+          <li><a href="#soporte">Soporte técnico</a></li>
+          <li><a href="#garantia">Garantía</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Licencia Creative Commons -->
+    <div class="licencia-cc contenedor">
+      <p>
+        <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
+        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">CC BY-NC-SA
+          4.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
+      </p>
+    </div>
+  </footer>
+
+  <!-- Sonido -->
+  <audio id="fx-transicion" src="audio/sonidoTransicion.mp3" preload="auto"></audio>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu JS -->
+  <script src="padelpro.js"></script>
+
+</body>
+</html>
