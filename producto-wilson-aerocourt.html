@@ -2,17 +2,18 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pala BullPadel Neuron 02 — Detalle</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wilson AeroCourt Hybrid 2026 — PadelPro</title>
 
-  <!-- BOOTSTRAP -->
+  <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- CSS (SASS COMPILADO) -->
+  <!-- TU CSS COMPILADO DE SASS -->
   <link rel="stylesheet" href="scss/main.css">
 
   <!-- Fuentes e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
@@ -20,45 +21,52 @@
 
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR IGUAL QUE ZAPATILLAS -->
   <header class="header">
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container contenedor navegacion">
 
+        <!-- Logo -->
         <a class="navbar-brand logo" href="index.html">
           <img src="images/lgo2.png" alt="PadelPro" class="logo-img">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
-          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Mostrar menú">
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Menú -->
         <div class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav mx-auto menu">
             <li class="nav-item">
-              <a class="nav-link activa" href="productos.html">Palas de Pádel</a>
+              <a class="nav-link" href="productos.html">Palas de Pádel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="zapatillas.html">Zapatillas</a>
+              <a class="nav-link activa" href="zapatillas.html">Zapatillas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Overgrips</a>
+              <a class="nav-link" href="#overgrips">Overgrips</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ropa</a>
+              <a class="nav-link" href="#ropa">Ropa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ofertas</a>
+              <a class="nav-link" href="#ofertas">Ofertas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
 
+          <!-- Iconos derecha -->
           <div class="d-flex iconos gap-2">
-            <button class="btn btn-outline-secondary" onclick="location.href='login.html'">👤</button>
-            <button class="btn btn-primary" onclick="location.href='carrito.html'">🛒</button>
+            <button class="btn btn-outline-secondary" title="Mi cuenta"
+              onclick="location.href='login.html'">👤</button>
+            <button class="btn btn-primary" title="Carrito"
+              onclick="location.href='carrito.html'">🛒</button>
           </div>
         </div>
 
@@ -66,87 +74,97 @@
     </nav>
   </header>
 
-  <!-- CONTENIDO -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="py-4">
     <div class="container contenedor ficha">
 
-
+  
       <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="productos.html">Palas de Pádel</a></li>
+          <li class="breadcrumb-item"><a href="zapatillas.html">Zapatillas</a></li>
           <li class="breadcrumb-item active" aria-current="page">
-            Pala BullPadel Neuron 02
+            Wilson AeroCourt Hybrid 2026
           </li>
         </ol>
       </nav>
 
-
+      <!-- FICHA -->
       <section class="ficha-principal">
 
+    
         <div class="ficha-medios">
-          <img src="images/bullpadelneuron.png" alt="BullPadel Neuron 02" id="fotoPrincipal">
+         
+          <img src="images/wilsonrosa.png" alt="Wilson AeroCourt Hybrid 2026">
         </div>
 
-
+       
         <div class="ficha-info">
 
-
+        
           <div class="d-flex flex-wrap gap-2 mb-2">
-            <span class="pildora marca">BullPadel</span>
-            <span class="pildora">Novedad</span>
-            <span class="pildora">Potencia · Competición</span>
+            <span class="pildora marca">Wilson</span>
+            <span class="pildora">Mujer</span>
+            <span class="pildora">Máxima amortiguación</span>
+            <span class="pildora">Colección 2026</span>
           </div>
 
-          <h1 class="ficha-titulo h3">Pala BullPadel Neuron 02</h1>
-
+          
+          <h1 class="ficha-titulo h3">Wilson AeroCourt Hybrid 2026</h1>
           <p class="text-muted mb-2">
-            La <strong>BullPadel Neuron 02</strong> está diseñada para una potencia agresiva sin perder control.
-            Combina carbono, goma <strong>MultiEVA</strong> y canal aerodinámico
-            <em>Air React Channel</em> para golpes más rápidos y con efecto.
+            Zapatillas de pádel diseñadas para jugadoras que buscan comodidad y
+            amortiguación en cada punto sin renunciar a la ligereza.
           </p>
 
-         
-          <p class="ficha-precio">339,90 €</p>
+        
+          <p class="ficha-precio">129,95 €</p>
 
+       
           <div class="ficha-aviso d-flex align-items-center gap-2">
             <span class="material-symbols-outlined">local_shipping</span>
-            <span>Incluye funda · Envío 24/48 h sin coste adicional.</span>
+            <span>Envío 24/48 h · Devolución gratuita durante 30 días.</span>
           </div>
 
-
-          <div class="ficha-compra mt-2">
+          <!-- BLOQUE COMPRA -->
+          <div class="ficha-compra">
 
             <div class="ficha-fila">
-              <label for="cantidad" class="fw-semibold me-2">Cantidad</label>
-              <select id="cantidad" class="form-select form-select-sm w-auto">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+              <label for="talla" class="fw-semibold me-2">Talla</label>
+              <select id="talla" class="form-select form-select-sm w-auto">
+                <option>36</option>
+                <option>37</option>
+                <option selected>38</option>
+                <option>39</option>
+                <option>40</option>
               </select>
             </div>
 
+            <div class="ficha-fila">
+              <label for="cantidad" class="fw-semibold me-2">Cantidad</label>
+              <input id="cantidad" type="number" min="1" value="1"
+                     class="form-control form-control-sm w-auto">
+            </div>
+
             <div class="ficha-acciones">
-              <button class="btn btn-primary flex-grow-1" id="btnAnadir">
+              <button class="btn btn-primary flex-grow-1">
                 Añadir al carrito
               </button>
-              <a href="carrito.html" class="btn btn-outline-secondary" id="btnComprar">
+              <a href="carrito.html" class="btn btn-outline-secondary">
                 Comprar ahora
               </a>
             </div>
 
             <p class="small text-muted mb-0">
-              Envío 24/48 h · Devoluciones fáciles · 2 años de garantía.
+              Impuestos incluidos · Envío gratis a partir de 80 €.
             </p>
           </div>
 
-     
+          <!-- LISTA DE CARACTERÍSTICAS -->
           <ul class="ficha-lista">
-            <li>Marco de carbono y goma MultiEVA de doble densidad.</li>
-            <li>Canal <em>Air React Channel</em> para mayor aerodinámica.</li>
-            <li>Acabado rugoso para mejorar el efecto en todos los golpes.</li>
-            <li>Equilibrio alto para máxima pegada en remates.</li>
+            <li>Mediasuela con amortiguación híbrida para minimizar el impacto en articulaciones.</li>
+            <li>Upper resistente con refuerzos en la zona de arrastre para mayor durabilidad.</li>
+            <li>Diseño específico para pádel con excelente tracción lateral.</li>
+            <li>Peso ligero para favorecer los desplazamientos rápidos en pista.</li>
           </ul>
 
         </div>
@@ -154,55 +172,52 @@
 
       <!-- RESEÑAS -->
       <section class="ficha-resenas">
-        <h2 class="h5">Últimas reseñas</h2>
+        <h2 class="h5">Opiniones de jugadoras</h2>
 
         <div class="rejilla-resenas">
+          <!-- Reseña 1 -->
           <article class="resena">
             <div class="estrellas">★★★★★</div>
-            <h4>Potencia con buena estabilidad</h4>
-            <p>
-              Se nota muy sólida en remates y vibra poco. Me ha ayudado a cerrar puntos más fácil manteniendo el control
-              en defensa.
-            </p>
+            <h4>Comodísimas desde el primer día</h4>
+            <p>No he tenido rozaduras ni molestias, las usé directamente en partido y perfectas.</p>
             <div class="usuario-resena">
-              <img src="images/marial.png" alt="">
-              <span>María L. · 03/10/2025</span>
+              <img src="images/made.png" alt="">
+              <span>Madelyne C.</span>
             </div>
           </article>
 
+          <!-- Reseña 2 -->
           <article class="resena">
             <div class="estrellas">★★★★☆</div>
-            <h4>Salida de bola rápida</h4>
-            <p>
-              El punto dulce es amplio y la pelota sale muy viva. Quizá un pelín dura al principio, luego va perfecta.
-            </p>
+            <h4>Amortiguación top</h4>
+            <p>Juego muchas horas a la semana y se nota en rodillas y tobillos, se agradece.</p>
             <div class="usuario-resena">
               <img src="images/martap.png" alt="">
-              <span>Marta P. · 10/10/2025</span>
+              <span>Laura P.</span>
             </div>
           </article>
 
+          <!-- Reseña 3 -->
           <article class="resena">
             <div class="estrellas">★★★★★</div>
-            <h4>Para juego ofensivo</h4>
-            <p>
-              Si atacas, se nota la ganancia en pegada. El efecto en bandejas y víboras es muy bueno.
-            </p>
+            <h4>Se agarran muy bien</h4>
+            <p>En pista me dan mucha seguridad en los apoyos laterales, sin resbalones.</p>
             <div class="usuario-resena">
-              <img src="images/jalvarez.png" alt="">
-              <span>J. Álvarez · 14/10/2025</span>
+              <img src="images/marial.png" alt="">
+              <span>Claudia R.</span>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- BOLETÍN -->
       <section class="mt-3">
         <div class="boletin">
-          <h2 class="h5 mb-1">Sigue las últimas novedades BullPadel</h2>
-          <p>Con nuestro catálogo diario de palas de competición.</p>
-          <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
-            <input type="email" required placeholder="tu@gmail.com" class="form-control">
-            <button class="btn btn-primary mt-2">Enviar</button>
+          <h2 class="h5 mb-1">Novedades en zapatillas Wilson</h2>
+          <p class="mb-2">Apúntate y recibe lanzamientos y ofertas exclusivas en tu correo.</p>
+          <form class="form-boletin">
+            <input type="email" class="form-control" placeholder="Tu email">
+            <button type="submit" class="btn btn-primary">Apuntarme</button>
           </form>
         </div>
       </section>
@@ -233,6 +248,7 @@
 
         <p class="texto-peq">© 2026 PadelShop</p>
       </div>
+
       <div>
         <h4>Categorías</h4>
         <ul>
@@ -241,6 +257,7 @@
           <li><a href="#">Accesorios</a></li>
         </ul>
       </div>
+
       <div>
         <h4>Información</h4>
         <ul>
@@ -249,6 +266,7 @@
           <li><a href="#">Términos y condiciones</a></li>
         </ul>
       </div>
+
       <div>
         <h4>Atención al cliente</h4>
         <ul>
@@ -262,7 +280,9 @@
     <div class="licencia-cc contenedor">
       <p>
         <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
-        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
+        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">
+          Rafael De La Fuente López
+        </a>
         is licensed under
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">
           CC BY-NC-SA 4.0
@@ -279,5 +299,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>

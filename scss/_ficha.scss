@@ -69,6 +69,7 @@
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 14px;
+   
 }
 
 .ficha-fila {
@@ -82,6 +83,10 @@
   padding: 8px;
   border: 2px solid #e5eff8;
   border-radius: 10px;
+}
+
+.ficha-compra select {
+  min-width: 70px;  
 }
 
 .ficha-acciones {

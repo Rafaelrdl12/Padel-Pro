@@ -2,12 +2,18 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BullPadel Wonder — Detalle</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiron Velocity Pro 2026 — PadelPro</title>
 
+  <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- TU CSS -->
   <link rel="stylesheet" href="scss/main.css">
+
+  <!-- Fuentes e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
@@ -15,9 +21,11 @@
 
 <body>
 
+  <!-- NAVBAR -->
   <header class="header">
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container contenedor navegacion">
+
         <a class="navbar-brand logo" href="index.html">
           <img src="images/lgo2.png" alt="PadelPro" class="logo-img">
         </a>
@@ -28,8 +36,8 @@
 
         <div class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav mx-auto menu">
-            <li class="nav-item"><a class="nav-link activa" href="productos.html">Palas de Pádel</a></li>
-            <li class="nav-item"><a class="nav-link" href="zapatillas.html">Zapatillas</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Palas de Pádel</a></li>
+            <li class="nav-item"><a class="nav-link activa" href="zapatillas.html">Zapatillas</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Overgrips</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
@@ -41,54 +49,71 @@
             <button class="btn btn-primary" onclick="location.href='carrito.html'">🛒</button>
           </div>
         </div>
+
       </div>
     </nav>
   </header>
 
+  <!-- CONTENIDO -->
   <main class="py-4">
     <div class="container contenedor ficha">
+
 
       <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="productos.html">Palas de Pádel</a></li>
-          <li class="breadcrumb-item active">BullPadel Wonder</li>
+          <li class="breadcrumb-item"><a href="zapatillas.html">Zapatillas</a></li>
+          <li class="breadcrumb-item active">Kiron Velocity Pro 2026</li>
         </ol>
       </nav>
 
+
       <section class="ficha-principal">
+
+   
         <div class="ficha-medios">
-          <img src="images/bullpadelwonder.png" alt="BullPadel Wonder">
+          <img src="images/ralloblanca.png" alt="Kiron Velocity Pro 2026">
         </div>
 
+        <!-- INFORMACIÓN DEL PRODUCTO -->
         <div class="ficha-info">
+
           <div class="d-flex flex-wrap gap-2 mb-2">
-            <span class="pildora marca">BullPadel</span>
-            <span class="pildora">Polivalente</span>
-            <span class="pildora">Competición</span>
+            <span class="pildora marca">Kiron</span>
+            <span class="pildora">Unisex</span>
+            <span class="pildora">Pistas rápidas</span>
+            <span class="pildora">Colección 2026</span>
           </div>
 
-          <h1 class="ficha-titulo h3">BullPadel Wonder 2026</h1>
-          <p class="text-muted mb-2">
-            Pala polivalente pensada para jugadoras que quieren un equilibrio perfecto entre
-            control y potencia, con tacto cómodo y salida de bola fácil.
+          <h1 class="ficha-titulo h3">Kiron Velocity Pro 2026</h1>
+          <p class="text-muted">
+            Modelo diseñado para jugadores que buscan velocidad y precisión en cada desplazamiento,
+            con una sujeción firme y una suela pensada para pistas rápidas.
           </p>
 
-          <p class="ficha-precio">319,90 €</p>
+          <p class="ficha-precio">104,95 €</p>
 
+          
           <div class="ficha-aviso d-flex align-items-center gap-2">
             <span class="material-symbols-outlined">local_shipping</span>
-            <span>Enviar en 24/48 h · Incluye funda protectora.</span>
+            <span>Envío 24/48 h · Devolución gratuita 30 días.</span>
           </div>
 
           <div class="ficha-compra mt-2">
+
+            <div class="ficha-fila">
+              <label class="fw-semibold me-2">Talla</label>
+              <select class="form-select form-select-sm w-auto">
+                <option>39</option>
+                <option>40</option>
+                <option selected>41</option>
+                <option>42</option>
+              </select>
+            </div>
+
             <div class="ficha-fila">
               <label class="fw-semibold me-2">Cantidad</label>
-              <select class="form-select form-select-sm w-auto">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
+              <input type="number" min="1" value="1" class="form-control form-control-sm w-auto">
             </div>
 
             <div class="ficha-acciones">
@@ -96,57 +121,64 @@
               <a href="carrito.html" class="btn btn-outline-secondary">Comprar ahora</a>
             </div>
 
-            <p class="small text-muted">Impuestos incluidos · Devoluciones sencillas.</p>
+            <p class="small text-muted">Impuestos incluidos · Envío gratis desde 80 €.</p>
           </div>
 
+         
           <ul class="ficha-lista">
-            <li>Balance medio y punto dulce amplio.</li>
-            <li>Combina carbono y fibra de vidrio para un tacto más cómodo.</li>
-            <li>Recomendada para jugadoras de nivel intermedio y avanzado.</li>
-            <li>Diseño ligero para mejorar la maniobrabilidad en la red.</li>
+            <li>Sujeción muy firme gracias al refuerzo lateral interno.</li>
+            <li>Diseño ligero pensado para jugadas rápidas.</li>
+            <li>Suela ideal para pistas rápidas, con deslizamiento controlado.</li>
+            <li>Plantilla ergonómica que evita fatiga en partidos largos.</li>
           </ul>
+
         </div>
       </section>
 
+      <!-- RESEÑAS -->
       <section class="ficha-resenas">
         <h2 class="h5">Opiniones</h2>
+
         <div class="rejilla-resenas">
+
           <article class="resena">
             <div class="estrellas">★★★★★</div>
-            <h4>Muy cómoda</h4>
-            <p>No cansa el brazo y tengo buena salida de bola.</p>
+            <h4>Precisión total</h4>
+            <p>En pistas rápidas se comportan increíble, muy ágiles.</p>
             <div class="usuario-resena">
-              <img src="images/marial.png" alt=""><span>Laura T.</span>
+              <img src="images/jj.png"><span>Carlos V.</span>
             </div>
           </article>
 
           <article class="resena">
             <div class="estrellas">★★★★☆</div>
-            <h4>Equilibrada</h4>
-            <p>Me defiendo bien y también puedo apretar cuando toca.</p>
+            <h4>Muy cómodas</h4>
+            <p>Después de dos semanas de uso, siguen perfectas.</p>
             <div class="usuario-resena">
-              <img src="images/martap.png" alt=""><span>Patricia R.</span>
+              <img src="images/made.png"><span>Lucía F.</span>
             </div>
           </article>
 
           <article class="resena">
             <div class="estrellas">★★★★★</div>
-            <h4>Repetiría</h4>
-            <p>La volvería a comprar sin duda, muy completa.</p>
+            <h4>Relación calidad-precio</h4>
+            <p>Son de las mejores opciones por este precio.</p>
             <div class="usuario-resena">
-              <img src="images/made.png" alt=""><span>Carmen S.</span>
+              <img src="images/oblak.png"><span>Mario S.</span>
             </div>
           </article>
+
         </div>
       </section>
 
+      <!-- BOLETÍN -->
       <section class="mt-3">
         <div class="boletin">
-          <h2 class="h5 mb-1">Novedades para jugadoras BullPadel</h2>
-          <p>Suscríbete para no perderte nuevas palas de la gama Wonder.</p>
-          <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
-            <input type="email" class="form-control" required placeholder="tu@email.com">
-            <button class="btn btn-primary mt-2">Apuntarme</button>
+          <h2 class="h5 mb-1">Novedades Kiron</h2>
+          <p>Recibe ofertas y productos exclusivos.</p>
+          <form class="form-boletin">
+            <input type="email" class="form-control" placeholder="Tu email">
+            <button class="btn btn-primary">Apuntarme</button>
           </form>
         </div>
       </section>
@@ -154,24 +186,27 @@
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="contenedor rejilla-footer">
       <div>
         <h4>Síguenos</h4>
+
         <nav class="sociales" aria-label="Redes sociales">
-          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">
+          <a class="social" href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener">
             <span class="material-symbols-outlined">photo_camera</span>
           </a>
-          <a class="social" href="https://twitter.com" target="_blank" rel="noopener">
+          <a class="social" href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
             <span class="material-symbols-outlined">public</span>
           </a>
-          <a class="social" href="https://facebook.com" target="_blank" rel="noopener">
+          <a class="social" href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
             <span class="material-symbols-outlined">group</span>
           </a>
-          <a class="social" href="https://youtube.com" target="_blank" rel="noopener">
+          <a class="social" href="https://youtube.com" target="_blank" title="YouTube" rel="noopener">
             <span class="material-symbols-outlined">smart_display</span>
           </a>
         </nav>
+
         <p class="texto-peq">© 2026 PadelShop</p>
       </div>
 
@@ -205,21 +240,20 @@
 
     <div class="licencia-cc contenedor">
       <p>
-        <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
-        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
+        <a href="#">PadelPro</a> © 2025 by
+        <a href="#">Rafael De La Fuente López</a>
         is licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">
-          CC BY-NC-SA 4.0
-        </a>
-        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
+        <a href="#">CC BY-NC-SA 4.0</a>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class="cc-icon">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" class="cc-icon">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" class="cc-icon">
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" class="cc-icon">
       </p>
     </div>
   </footer>
 
+  <!-- JS BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 </html>

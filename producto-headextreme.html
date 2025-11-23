@@ -1,209 +1,220 @@
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pala Head Extreme Pro 2026 — Detalle</title>
+  <title>Head Extreme Pro 2026 — Detalle</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="scss/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <!--Libreia iconos google-->
-  <link rel="icon" type="images/x-ico" href="/images/lgo2.ico">
-
+  <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
 </head>
-
 <body>
 
-  <header class="header">
-    <div class="contenedor navegacion">
-      <a class="logo" href="index.html"><img src="images/lgo2.png" alt="PadelShop"></a>
-      <nav class="menu">
-        <a href="productos.html">Palas de Pádel</a>
-        <a href="zapatillas.html">Zapatillas</a>
-        <a href="#">Overgrips</a>
-        <a href="#">Ropa</a>
-        <a href="#">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <div class="iconos">
-        <a href="login.html" aria-label="Mi cuenta" title="Mi cuenta" class="icono-cuenta">
-          👤
-        </a>
-        <button title="Carrito" onclick="location.href='carrito.html'">🛒</button>
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container contenedor navegacion">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="images/lgo2.png" alt="PadelPro" class="logo-img">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto menu">
+          <li class="nav-item"><a class="nav-link activa" href="productos.html">Palas de Pádel</a></li>
+          <li class="nav-item"><a class="nav-link" href="zapatillas.html">Zapatillas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Overgrips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="d-flex iconos gap-2">
+          <button class="btn btn-outline-secondary" onclick="location.href='login.html'">👤</button>
+          <button class="btn btn-primary" onclick="location.href='carrito.html'">🛒</button>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
+</header>
 
-  <main class="contenedor ficha">
+<main class="py-4">
+  <div class="container contenedor ficha">
+
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="productos.html">Palas de Pádel</a></li>
+        <li class="breadcrumb-item active">Head Extreme Pro 2026</li>
+      </ol>
+    </nav>
 
     <section class="ficha-principal">
       <div class="ficha-medios">
-        <img src="images/headextreme.png" alt="Head Extreme Pro 2026" id="fotoPrincipal">
+        <img src="images/headextreme.png" alt="Head Extreme Pro 2026">
       </div>
 
       <div class="ficha-info">
-        <div class="pildoras" style="margin-bottom:8px">
+        <div class="d-flex flex-wrap gap-2 mb-2">
           <span class="pildora marca">Head</span>
-          <span class="pildora">Novedad</span>
+          <span class="pildora">Potencia</span>
+          <span class="pildora">Competición</span>
         </div>
 
-        <h1 class="ficha-titulo">Pala Head Extreme Pro 2026</h1>
-        <p class="ficha-precio">359,95 €</p>
-
-        <p class="ficha-aviso">
-          <strong>ATENCIÓN —</strong> Potencia de diamante con gran salida de bola.
+        <h1 class="ficha-titulo h3">Head Extreme Pro 2026</h1>
+        <p class="text-muted mb-2">
+          Pala muy explosiva con balance alto, ideal para jugadores ofensivos que buscan
+          máxima pegada y un punto dulce amplio para rematar desde cualquier zona.
         </p>
 
-        <div class="ficha-compra">
+        <p class="ficha-precio">359,95 €</p>
+
+        <div class="ficha-aviso d-flex align-items-center gap-2">
+          <span class="material-symbols-outlined">local_shipping</span>
+          <span>Envío rápido · Funda oficial Head incluida.</span>
+        </div>
+
+        <div class="ficha-compra mt-2">
           <div class="ficha-fila">
-            <label for="cantidad">Cantidad</label>
-            <select id="cantidad">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
+            <label class="fw-semibold me-2">Cantidad</label>
+            <select class="form-select form-select-sm w-auto">
+              <option>1</option><option>2</option><option>3</option>
             </select>
           </div>
 
           <div class="ficha-acciones">
-            <button class="btn-principal" id="btnAnadir">Añadir al carrito</button>
-            <button class="btn-secundario" id="btnComprar">Comprar ya</button>
+            <button class="btn btn-primary flex-grow-1">Añadir al carrito</button>
+            <a href="carrito.html" class="btn btn-outline-secondary">Comprar ahora</a>
           </div>
 
-          <ul class="ficha-lista">
-            <li>Envío 24/48h</li>
-            <li>Devoluciones fáciles</li>
-            <li>2 años de garantía</li>
-          </ul>
+          <p class="small text-muted">Impuestos incluidos · Devoluciones 30 días.</p>
         </div>
 
-        <div class="ficha-tarjeta">
-          <h3>Título</h3>
-          <p>
-            La <strong>Head Extreme Pro 2026</strong> aporta potencia gracias a su forma de diamante y cara rugosa.
-            Núcleo de alta respuesta que empuja fuerte en remates, manteniendo estabilidad en voleas rápidas.
-          </p>
-        </div>
+        <ul class="ficha-lista">
+          <li>Construcción en carbono de alto rendimiento.</li>
+          <li>Superficie rugosa que ayuda al efecto en bandejas y remates.</li>
+          <li>Balance alto para incrementar la velocidad de la bola.</li>
+          <li>Recomendada para jugadores de nivel avanzado y profesional.</li>
+        </ul>
       </div>
     </section>
 
     <section class="ficha-resenas">
-      <h2>Últimas reseñas</h2>
-
+      <h2 class="h5">Opiniones</h2>
       <div class="rejilla-resenas">
         <article class="resena">
           <div class="estrellas">★★★★★</div>
-          <h4>Remata que da gusto</h4>
-          <p>
-            La bola sale muy tensa y profunda. Para juego ofensivo, es una pasada.
-          </p>
+          <h4>Muchísima pegada</h4>
+          <p>Se nota la diferencia cuando rematas por tres, sale disparada.</p>
           <div class="usuario-resena">
-            <img src="images/marial.png" alt="" />
-            <span>María L. · 02/10/2025</span>
+            <img src="images/oblak.png" alt=""><span>Álvaro P.</span>
           </div>
         </article>
 
         <article class="resena">
           <div class="estrellas">★★★★☆</div>
-          <h4>Estable y rápida</h4>
-          <p>
-            Se siente firme en la mano y no vibra. En defensa exige un poco, pero arriba brilla.
-          </p>
+          <h4>No es para todos</h4>
+          <p>Si no juegas agresivo quizá sea demasiado exigente.</p>
           <div class="usuario-resena">
-            <img src="images/martap.png" alt="" />
-            <span>Marta P. · 08/10/2025</span>
+            <img src="images/jj.png" alt=""><span>Héctor D.</span>
           </div>
         </article>
 
         <article class="resena">
           <div class="estrellas">★★★★★</div>
-          <h4>Efecto notable</h4>
-          <p>
-            La textura ayuda a cargar las bandejas de efecto. Muy recomendable si te gusta atacar.
-          </p>
+          <h4>Perfecta para ataque</h4>
+          <p>Justo lo que buscaba para un juego muy ofensivo.</p>
           <div class="usuario-resena">
-            <img src="images/jalvarez.png" alt="" />
-            <span>J. Álvarez · 13/10/2025</span>
+            <img src="images/jalvarez.png" alt=""><span>Iván L.</span>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="boletin">
-      <h3>Sigue las últimas tendencias</h3>
-      <p>Con nuestro catálogo diario</p>
-      <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
-        <input type="email" required placeholder="tu@gmail.com">
-        <button class="btn-principal">Enviar</button>
-      </form>
+    <section class="mt-3">
+      <div class="boletin">
+        <h2 class="h5 mb-1">Novedades Head Extreme</h2>
+        <p>Suscríbete para estar al día de nuevas versiones y ofertas.</p>
+        <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+          <input type="email" class="form-control" required placeholder="tu@email.com">
+          <button class="btn btn-primary mt-2">Apuntarme</button>
+        </form>
+      </div>
     </section>
 
-  </main>
+  </div>
+</main>
 
-  <footer class="footer">
-    <div class="contenedor rejilla-footer">
-      <div>
-        <h4>Síguenos</h4>
-
-        <nav class="sociales" aria-label="Redes sociales">
-          <a class="social" href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener">
-            <span class="material-symbols-outlined">photo_camera</span>
-          </a>
-          <a class="social" href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
-            <span class="material-symbols-outlined">public</span>
-          </a>
-          <a class="social" href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
-            <span class="material-symbols-outlined">group</span>
-          </a>
-          <a class="social" href="https://youtube.com" target="_blank" title="YouTube" rel="noopener">
-            <span class="material-symbols-outlined">smart_display</span>
-          </a>
-        </nav>
-
-        <p class="texto-peq">© 2026 PadelShop</p>
-      </div>
-      <div>
-        <h4>Categorías</h4>
-        <ul>
-          <li><a href="productos.html">Palas</a></li>
-          <li><a href="zapatillas.html">Zapatillas</a></li>
-          <li><a href="#">Accesorios</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Información</h4>
-        <ul>
-          <li><a href="#">Envíos y devoluciones</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Atención al cliente</h4>
-        <ul>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="#">Seguimiento de pedido</a></li>
-          <li><a href="#">Garantía de productos</a></li>
-        </ul>
-      </div>
+<footer class="footer">
+  <div class="contenedor rejilla-footer">
+    <div>
+      <h4>Síguenos</h4>
+      <nav class="sociales" aria-label="Redes sociales">
+        <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">photo_camera</span>
+        </a>
+        <a class="social" href="https://twitter.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">public</span>
+        </a>
+        <a class="social" href="https://facebook.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">group</span>
+        </a>
+        <a class="social" href="https://youtube.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">smart_display</span>
+        </a>
+      </nav>
+      <p class="texto-peq">© 2026 PadelShop</p>
     </div>
-    <!-- Licencia Creative Commons -->
-    <div class="licencia-cc contenedor">
-      <p>
-        <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
-        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
-        is licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">CC BY-NC-SA
-          4.0</a>
-        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
-      </p>
-    </div>
-  </footer>
 
+    <div>
+      <h4>Categorías</h4>
+      <ul>
+        <li><a href="productos.html">Palas</a></li>
+        <li><a href="zapatillas.html">Zapatillas</a></li>
+        <li><a href="#">Accesorios</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Información</h4>
+      <ul>
+        <li><a href="#">Envíos y devoluciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Atención al cliente</h4>
+      <ul>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">Seguimiento de pedido</a></li>
+        <li><a href="#">Garantía de productos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="licencia-cc contenedor">
+    <p>
+      <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
+      <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
+      is licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">
+        CC BY-NC-SA 4.0
+      </a>
+      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

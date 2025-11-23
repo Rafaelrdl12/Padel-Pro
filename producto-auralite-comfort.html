@@ -2,12 +2,18 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BullPadel Wonder — Detalle</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auralite Comfort Drive 2026 — PadelPro</title>
 
+  <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS COMPILADO (SASS) -->
   <link rel="stylesheet" href="scss/main.css">
+
+  <!-- Fuentes e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
@@ -15,9 +21,11 @@
 
 <body>
 
+  <!-- NAVBAR -->
   <header class="header">
     <nav class="navbar navbar-expand-lg bg-white">
       <div class="container contenedor navegacion">
+
         <a class="navbar-brand logo" href="index.html">
           <img src="images/lgo2.png" alt="PadelPro" class="logo-img">
         </a>
@@ -28,11 +36,11 @@
 
         <div class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav mx-auto menu">
-            <li class="nav-item"><a class="nav-link activa" href="productos.html">Palas de Pádel</a></li>
-            <li class="nav-item"><a class="nav-link" href="zapatillas.html">Zapatillas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Overgrips</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Palas de Pádel</a></li>
+            <li class="nav-item"><a class="nav-link activa" href="zapatillas.html">Zapatillas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#overgrips">Overgrips</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ropa">Ropa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
 
@@ -41,100 +49,141 @@
             <button class="btn btn-primary" onclick="location.href='carrito.html'">🛒</button>
           </div>
         </div>
+
       </div>
     </nav>
   </header>
 
+  <!-- CONTENIDO -->
   <main class="py-4">
     <div class="container contenedor ficha">
 
+     
       <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="productos.html">Palas de Pádel</a></li>
-          <li class="breadcrumb-item active">BullPadel Wonder</li>
+          <li class="breadcrumb-item"><a href="zapatillas.html">Zapatillas</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Auralite Comfort Drive 2026
+          </li>
         </ol>
       </nav>
 
+   
       <section class="ficha-principal">
+
+  
         <div class="ficha-medios">
-          <img src="images/bullpadelwonder.png" alt="BullPadel Wonder">
+      
+          <img src="images/ralloverde.png" alt="Auralite Comfort Drive 2026">
         </div>
 
+        <!-- INFORMACIÓN -->
         <div class="ficha-info">
+
+          
           <div class="d-flex flex-wrap gap-2 mb-2">
-            <span class="pildora marca">BullPadel</span>
-            <span class="pildora">Polivalente</span>
-            <span class="pildora">Competición</span>
+            <span class="pildora marca">Auralite</span>
+            <span class="pildora">Unisex</span>
+            <span class="pildora">Confort total</span>
+            <span class="pildora">Colección 2026</span>
           </div>
 
-          <h1 class="ficha-titulo h3">BullPadel Wonder 2026</h1>
+          
+          <h1 class="ficha-titulo h3">Auralite Comfort Drive 2026</h1>
           <p class="text-muted mb-2">
-            Pala polivalente pensada para jugadoras que quieren un equilibrio perfecto entre
-            control y potencia, con tacto cómodo y salida de bola fácil.
+            Zapatillas pensadas para priorizar la comodidad en cada punto, ideales para jugadores
+            que pasan muchas horas en pista y buscan suavidad en la pisada.
           </p>
 
-          <p class="ficha-precio">319,90 €</p>
+    
+          <p class="ficha-precio">99,95 €</p>
 
+      
           <div class="ficha-aviso d-flex align-items-center gap-2">
             <span class="material-symbols-outlined">local_shipping</span>
-            <span>Enviar en 24/48 h · Incluye funda protectora.</span>
+            <span>Envío 24/48 h · Devolución gratuita durante 30 días.</span>
           </div>
 
+    
           <div class="ficha-compra mt-2">
+
             <div class="ficha-fila">
-              <label class="fw-semibold me-2">Cantidad</label>
-              <select class="form-select form-select-sm w-auto">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
+              <label for="talla" class="fw-semibold me-2">Talla</label>
+              <select id="talla" class="form-select form-select-sm w-auto">
+                <option>39</option>
+                <option selected>40</option>
+                <option>41</option>
+                <option>42</option>
               </select>
             </div>
 
-            <div class="ficha-acciones">
-              <button class="btn btn-primary flex-grow-1">Añadir al carrito</button>
-              <a href="carrito.html" class="btn btn-outline-secondary">Comprar ahora</a>
+            <div class="ficha-fila">
+              <label for="cantidad" class="fw-semibold me-2">Cantidad</label>
+              <input id="cantidad" type="number" min="1" value="1"
+                     class="form-control form-control-sm w-auto">
             </div>
 
-            <p class="small text-muted">Impuestos incluidos · Devoluciones sencillas.</p>
+            <div class="ficha-acciones">
+              <button class="btn btn-primary flex-grow-1">
+                Añadir al carrito
+              </button>
+              <a href="carrito.html" class="btn btn-outline-secondary">
+                Comprar ahora
+              </a>
+            </div>
+
+            <p class="small text-muted mb-0">
+              Impuestos incluidos · Envío gratis a partir de 80 €.
+            </p>
           </div>
 
+         
           <ul class="ficha-lista">
-            <li>Balance medio y punto dulce amplio.</li>
-            <li>Combina carbono y fibra de vidrio para un tacto más cómodo.</li>
-            <li>Recomendada para jugadoras de nivel intermedio y avanzado.</li>
-            <li>Diseño ligero para mejorar la maniobrabilidad en la red.</li>
+            <li>Mediasuela de alta amortiguación para reducir el impacto en rodillas y tobillos.</li>
+            <li>Interior acolchado que se adapta al pie y evita rozaduras.</li>
+            <li>Suela equilibrada entre agarre y comodidad para todo tipo de pistas.</li>
+            <li>Materiales transpirables para mantener el pie fresco durante el partido.</li>
           </ul>
+
         </div>
       </section>
 
+      <!-- RESEÑAS -->
       <section class="ficha-resenas">
-        <h2 class="h5">Opiniones</h2>
+        <h2 class="h5">Opiniones de jugadores</h2>
+
         <div class="rejilla-resenas">
+       
           <article class="resena">
             <div class="estrellas">★★★★★</div>
-            <h4>Muy cómoda</h4>
-            <p>No cansa el brazo y tengo buena salida de bola.</p>
+            <h4>Las más cómodas que he tenido</h4>
+            <p>Juego ligas y torneos y no acabo con los pies destrozados como antes.</p>
             <div class="usuario-resena">
-              <img src="images/marial.png" alt=""><span>Laura T.</span>
+              <img src="images/marial.png" alt="">
+              <span>Elena R.</span>
             </div>
           </article>
 
+   
           <article class="resena">
             <div class="estrellas">★★★★☆</div>
-            <h4>Equilibrada</h4>
-            <p>Me defiendo bien y también puedo apretar cuando toca.</p>
+            <h4>Perfectas para entrenar</h4>
+            <p>Para sesiones largas de entrenamiento son una maravilla, muy blanditas.</p>
             <div class="usuario-resena">
-              <img src="images/martap.png" alt=""><span>Patricia R.</span>
+              <img src="images/made.png" alt="">
+              <span>Andrea L.</span>
             </div>
           </article>
 
+      
           <article class="resena">
             <div class="estrellas">★★★★★</div>
-            <h4>Repetiría</h4>
-            <p>La volvería a comprar sin duda, muy completa.</p>
+            <h4>Buena amortiguación</h4>
+            <p>Tengo molestias en talones y con estas lo noto mucho menos.</p>
             <div class="usuario-resena">
-              <img src="images/made.png" alt=""><span>Carmen S.</span>
+              <img src="images/martap.png" alt="">
+              <span>Marta G.</span>
             </div>
           </article>
         </div>
@@ -142,11 +191,11 @@
 
       <section class="mt-3">
         <div class="boletin">
-          <h2 class="h5 mb-1">Novedades para jugadoras BullPadel</h2>
-          <p>Suscríbete para no perderte nuevas palas de la gama Wonder.</p>
-          <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
-            <input type="email" class="form-control" required placeholder="tu@email.com">
-            <button class="btn btn-primary mt-2">Apuntarme</button>
+          <h2 class="h5 mb-1">Novedades Auralite</h2>
+          <p class="mb-2">Suscríbete para recibir noticias y ofertas especiales en calzado de confort.</p>
+          <form class="form-boletin">
+            <input type="email" class="form-control" placeholder="Tu email">
+            <button type="submit" class="btn btn-primary">Apuntarme</button>
           </form>
         </div>
       </section>
@@ -154,27 +203,29 @@
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="contenedor rejilla-footer">
       <div>
         <h4>Síguenos</h4>
+
         <nav class="sociales" aria-label="Redes sociales">
-          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">
+          <a class="social" href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener">
             <span class="material-symbols-outlined">photo_camera</span>
           </a>
-          <a class="social" href="https://twitter.com" target="_blank" rel="noopener">
+          <a class="social" href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
             <span class="material-symbols-outlined">public</span>
           </a>
-          <a class="social" href="https://facebook.com" target="_blank" rel="noopener">
+          <a class="social" href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
             <span class="material-symbols-outlined">group</span>
           </a>
-          <a class="social" href="https://youtube.com" target="_blank" rel="noopener">
+          <a class="social" href="https://youtube.com" target="_blank" title="YouTube" rel="noopener">
             <span class="material-symbols-outlined">smart_display</span>
           </a>
         </nav>
+
         <p class="texto-peq">© 2026 PadelShop</p>
       </div>
-
       <div>
         <h4>Categorías</h4>
         <ul>
@@ -183,7 +234,6 @@
           <li><a href="#">Accesorios</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Información</h4>
         <ul>
@@ -192,7 +242,6 @@
           <li><a href="#">Términos y condiciones</a></li>
         </ul>
       </div>
-
       <div>
         <h4>Atención al cliente</h4>
         <ul>
@@ -206,7 +255,9 @@
     <div class="licencia-cc contenedor">
       <p>
         <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
-        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
+        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">
+          Rafael De La Fuente López
+        </a>
         is licensed under
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">
           CC BY-NC-SA 4.0
@@ -219,7 +270,8 @@
     </div>
   </footer>
 
+  <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 </html>

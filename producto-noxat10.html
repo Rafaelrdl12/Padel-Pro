@@ -1,209 +1,220 @@
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pala NOX AT10 Genius 12K — Detalle</title>
-<link rel="stylesheet" href="scss/main.css">
+  <title>NOX AT10 Genius 12K — Detalle</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <!--Libreia iconos google-->
-  <link rel="icon" type="images/x-ico" href="/images/lgo2.ico">
+  <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
 </head>
-
 <body>
 
-  <header class="header">
-    <div class="contenedor navegacion">
-      <a class="logo" href="index.html"><img src="images/lgo2.png" alt="PadelShop"></a>
-      <nav class="menu">
-        <a href="productos.html">Palas de Pádel</a>
-        <a href="zapatillas.html">Zapatillas</a>
-        <a href="#">Overgrips</a>
-        <a href="#">Ropa</a>
-        <a href="#">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <div class="iconos">
-        <a href="login.html" aria-label="Mi cuenta" title="Mi cuenta" class="icono-cuenta">
-          👤
-        </a>
-        <button title="Carrito" onclick="location.href='carrito.html'">🛒</button>
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="container contenedor navegacion">
+      <a class="navbar-brand logo" href="index.html">
+        <img src="images/lgo2.png" alt="PadelPro" class="logo-img">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav mx-auto menu">
+          <li class="nav-item"><a class="nav-link activa" href="productos.html">Palas de Pádel</a></li>
+          <li class="nav-item"><a class="nav-link" href="zapatillas.html">Zapatillas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Overgrips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ropa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="d-flex iconos gap-2">
+          <button class="btn btn-outline-secondary" onclick="location.href='login.html'">👤</button>
+          <button class="btn btn-primary" onclick="location.href='carrito.html'">🛒</button>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
+</header>
 
-  <main class="contenedor ficha">
+<main class="py-4">
+  <div class="container contenedor ficha">
+
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="productos.html">Palas de Pádel</a></li>
+        <li class="breadcrumb-item active">NOX AT10 Genius 12K</li>
+      </ol>
+    </nav>
 
     <section class="ficha-principal">
       <div class="ficha-medios">
-        <img src="images/noxagus.png" alt="NOX AT10 Genius 12K" id="fotoPrincipal">
+        <img src="images/noxagus.png" alt="NOX AT10 Genius 12K">
       </div>
 
       <div class="ficha-info">
-        <div class="pildoras" style="margin-bottom:8px">
+        <div class="d-flex flex-wrap gap-2 mb-2">
           <span class="pildora marca">NOX</span>
-          <span class="pildora">Genius Series</span>
+          <span class="pildora">Polivalente</span>
+          <span class="pildora">Competición</span>
         </div>
 
-        <h1 class="ficha-titulo">Pala NOX AT10 Genius 12K by Agustín Tapia</h1>
-        <p class="ficha-precio">389,95 €</p>
-
-        <p class="ficha-aviso">
-          <strong>ATENCIÓN —</strong> Incluye overgrip y protector oficial NOX.
+        <h1 class="ficha-titulo h3">NOX AT10 Genius 12K</h1>
+        <p class="text-muted mb-2">
+          La pala oficial de Agustín Tapia, con carbono 12K y un tacto intermedio
+          que combina potencia y control a nivel profesional.
         </p>
 
-        <div class="ficha-compra">
+        <p class="ficha-precio">389,95 €</p>
+
+        <div class="ficha-aviso d-flex align-items-center gap-2">
+          <span class="material-symbols-outlined">local_shipping</span>
+          <span>Incluye overgrip + funda · Envío 24/48 h.</span>
+        </div>
+
+        <div class="ficha-compra mt-2">
           <div class="ficha-fila">
-            <label for="cantidad">Cantidad</label>
-            <select id="cantidad">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
+            <label class="fw-semibold me-2">Cantidad</label>
+            <select class="form-select form-select-sm w-auto">
+              <option>1</option><option>2</option><option>3</option>
             </select>
           </div>
 
           <div class="ficha-acciones">
-            <button class="btn-principal" id="btnAnadir">Añadir al carrito</button>
-            <button class="btn-secundario" id="btnComprar">Comprar ya</button>
+            <button class="btn btn-primary flex-grow-1">Añadir al carrito</button>
+            <a href="carrito.html" class="btn btn-outline-secondary">Comprar ahora</a>
           </div>
 
-          <ul class="ficha-lista">
-            <li>Envío 24/48h</li>
-            <li>Devoluciones fáciles</li>
-            <li>2 años de garantía</li>
-          </ul>
+          <p class="small text-muted">Impuestos incluidos · 2 años de garantía NOX.</p>
         </div>
 
-        <div class="ficha-tarjeta">
-          <h3>Título</h3>
-          <p>
-            La <strong>NOX AT10 Genius 12K</strong> equilibra potencia y control con carbono 12K y goma HR3.
-            La cara con textura mejora el efecto y el diseño exclusivo aporta un plus de estética en pista.
-          </p>
-        </div>
+        <ul class="ficha-lista">
+          <li>Carbono 12K en las caras para mayor respuesta.</li>
+          <li>Goma HR3 para un tacto intermedio con mucha salida de bola.</li>
+          <li>Acabado arenoso para mayor efecto.</li>
+          <li>Recomendada para jugadores de nivel avanzado y profesional.</li>
+        </ul>
       </div>
     </section>
 
     <section class="ficha-resenas">
-      <h2>Últimas reseñas</h2>
-
+      <h2 class="h5">Opiniones</h2>
       <div class="rejilla-resenas">
         <article class="resena">
           <div class="estrellas">★★★★★</div>
-          <h4>Muy completa</h4>
-          <p>
-            Controla bien en defensa y se nota la pegada en remates. Me encanta el tacto.
-          </p>
+          <h4>Una máquina</h4>
+          <p>Se entiende por qué la usa Tapia, es una pala muy completa.</p>
           <div class="usuario-resena">
-            <img src="images/marial.png" alt="" />
-            <span>María L. · 04/10/2025</span>
+            <img src="images/marial.png" alt=""><span>Rubén G.</span>
           </div>
         </article>
 
         <article class="resena">
           <div class="estrellas">★★★★☆</div>
-          <h4>Buen efecto</h4>
-          <p>
-            La rugosidad se nota en bandejas y víboras. Al principio algo firme, luego va fina.
-          </p>
+          <h4>Requiere nivel</h4>
+          <p>No es sencilla si vienes de algo más blando, pero cuando te acostumbras es top.</p>
           <div class="usuario-resena">
-            <img src="images/martap.png" alt="" />
-            <span>Marta P. · 09/10/2025</span>
+            <img src="images/martap.png" alt=""><span>Sergi M.</span>
           </div>
         </article>
 
         <article class="resena">
           <div class="estrellas">★★★★★</div>
-          <h4>Equilibrio top</h4>
-          <p>
-            Para un juego polivalente va perfecta. Calidad de construcción sobresaliente.
-          </p>
+          <h4>Muy completa</h4>
+          <p>Puedo defender cómodo y rematar con potencia, justo lo que buscaba.</p>
           <div class="usuario-resena">
-            <img src="images/jalvarez.png" alt="" />
-            <span>J. Álvarez · 16/10/2025</span>
+            <img src="images/jalvarez.png" alt=""><span>Mario L.</span>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="boletin">
-      <h3>Sigue las últimas tendencias</h3>
-      <p>Con nuestro catálogo diario</p>
-      <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
-        <input type="email" required placeholder="tu@gmail.com">
-        <button class="btn-principal">Enviar</button>
-      </form>
+    <section class="mt-3">
+      <div class="boletin">
+        <h2 class="h5 mb-1">Novedades NOX AT10</h2>
+        <p>Recibe info de nuevas versiones, packs y ofertas.</p>
+        <form class="form-boletin" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+          <input type="email" class="form-control" required placeholder="tu@email.com">
+          <button class="btn btn-primary mt-2">Apuntarme</button>
+        </form>
+      </div>
     </section>
 
-  </main>
+  </div>
+</main>
 
-  <footer class="footer">
-    <div class="contenedor rejilla-footer">
-      <div>
-        <h4>Síguenos</h4>
-
-        <nav class="sociales" aria-label="Redes sociales">
-          <a class="social" href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener">
-            <span class="material-symbols-outlined">photo_camera</span>
-          </a>
-          <a class="social" href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
-            <span class="material-symbols-outlined">public</span>
-          </a>
-          <a class="social" href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
-            <span class="material-symbols-outlined">group</span>
-          </a>
-          <a class="social" href="https://youtube.com" target="_blank" title="YouTube" rel="noopener">
-            <span class="material-symbols-outlined">smart_display</span>
-          </a>
-        </nav>
-
-        <p class="texto-peq">© 2026 PadelShop</p>
-      </div>
-      <div>
-        <h4>Categorías</h4>
-        <ul>
-          <li><a href="productos.html">Palas</a></li>
-          <li><a href="zapatillas.html">Zapatillas</a></li>
-          <li><a href="#">Accesorios</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Información</h4>
-        <ul>
-          <li><a href="#">Envíos y devoluciones</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Atención al cliente</h4>
-        <ul>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="#">Seguimiento de pedido</a></li>
-          <li><a href="#">Garantía de productos</a></li>
-        </ul>
-      </div>
+<footer class="footer">
+  <div class="contenedor rejilla-footer">
+    <div>
+      <h4>Síguenos</h4>
+      <nav class="sociales" aria-label="Redes sociales">
+        <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">photo_camera</span>
+        </a>
+        <a class="social" href="https://twitter.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">public</span>
+        </a>
+        <a class="social" href="https://facebook.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">group</span>
+        </a>
+        <a class="social" href="https://youtube.com" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">smart_display</span>
+        </a>
+      </nav>
+      <p class="texto-peq">© 2026 PadelShop</p>
     </div>
-    <!-- Licencia Creative Commons -->
-    <div class="licencia-cc contenedor">
-      <p>
-        <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
-        <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
-        is licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">CC BY-NC-SA
-          4.0</a>
-        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
-        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
-      </p>
+
+    <div>
+      <h4>Categorías</h4>
+      <ul>
+        <li><a href="productos.html">Palas</a></li>
+        <li><a href="zapatillas.html">Zapatillas</a></li>
+        <li><a href="#">Accesorios</a></li>
+      </ul>
     </div>
-  </footer>
 
+    <div>
+      <h4>Información</h4>
+      <ul>
+        <li><a href="#">Envíos y devoluciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+      </ul>
+    </div>
 
+    <div>
+      <h4>Atención al cliente</h4>
+      <ul>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">Seguimiento de pedido</a></li>
+        <li><a href="#">Garantía de productos</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="licencia-cc contenedor">
+    <p>
+      <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
+      <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
+      is licensed under
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">
+        CC BY-NC-SA 4.0
+      </a>
+      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
+      <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" class="cc-icon">
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

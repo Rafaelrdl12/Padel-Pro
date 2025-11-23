@@ -4,194 +4,331 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tienda Pádel — Productos</title>
+  <title>PadelPro — Palas de pádel</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS PROPIO (SASS COMPILADO) -->
   <link rel="stylesheet" href="scss/main.css">
+
+  <!-- Fuentes e iconos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-  <!--Fuente tipografica-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <!--Libreia iconos google-->
   <link rel="icon" type="image/x-icon" href="images/lgo2.ico">
-
 </head>
 
 <body>
 
-
+  <!-- NAVBAR BOOTSTRAP  -->
   <header class="header">
-    <div class="contenedor navegacion">
-      <a class="logo" href="index.html">
-        <img src="images/lgo2.png" alt="PadelShop">
-      </a>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container contenedor navegacion">
 
-      <nav class="menu">
-        <a href="productos.html" class="activa">Palas de Pádel</a>
-        <a href="zapatillas.html">Zapatillas</a>
-        <a href="#overgrips">Overgrips</a>
-        <a href="#ropa">Ropa</a>
-        <a href="#ofertas">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-
-      <div class="iconos">
-        <a href="login.html" aria-label="Mi cuenta" title="Mi cuenta" class="icono-cuenta">
-          👤
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/lgo2.png" alt="PadelPro">
         </a>
 
-        <button aria-label="Carrito" title="Carrito" onclick="location.href='carrito.html'">🛒</button>
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto menu">
+            <li class="nav-item">
+              <a class="nav-link activa" href="productos.html">Palas de Pádel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zapatillas.html">Zapatillas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#overgrips">Overgrips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ropa">Ropa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ofertas">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <!-- Iconos derecha -->
+          <div class="d-flex iconos gap-2">
+            <button class="btn btn-outline-secondary" title="Mi cuenta" onclick="location.href='login.html'">👤</button>
+            <button class="btn btn-primary" title="Carrito" onclick="location.href='carrito.html'">🛒</button>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </nav>
   </header>
 
-  <main class="contenedor productos-pagina">
+  <main class="py-4">
+    <div class="container contenedor">
 
-
-    <div class="barra-herramientas">
-      <div class="caja-busqueda">
-        <input id="buscar" type="search" placeholder="Buscar pala..." />
-      </div>
-
-      <div class="pildoras" role="tablist" aria-label="Ordenar">
-        <button class="pildora activa" data-sort="nuevo">✔ Novedades</button>
-        <button class="pildora" data-sort="asc">Precio Ascendente</button>
-        <button class="pildora" data-sort="desc">Precio Descendente</button>
-        <button class="pildora" data-sort="stock">En Stock</button>
-      </div>
-    </div>
-
-    <div class="disposicion">
-
-      <aside class="filtros">
-        <h3>Filtrar por</h3>
-
-        <details open>
-          <summary>Control / Potencia</summary>
-          <label><input type="checkbox" class="filtro-check" data-filter="tipo" value="control"> Control</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="tipo" value="potencia"> Potencia</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="tipo" value="polivalente"> Polivalente</label>
-        </details>
-
-        <details open>
-          <summary>Peso</summary>
-          <label><input type="checkbox" class="filtro-check" data-filter="peso" value="ligera"> Ligera</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="peso" value="media"> Media</label>
-        </details>
-
-        <details open>
-          <summary>Marcas</summary>
-          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="BullPadel"> BullPadel</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="Head"> Head</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="Siux"> Siux</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="marca" value="NOX"> NOX</label>
-        </details>
-
-        <details open>
-          <summary>Nivel</summary>
-          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="iniciación"> Iniciación</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="medio"> Medio</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="nivel" value="competición">
-            Competición</label>
-        </details>
-
-        <details open>
-          <summary>Tipo de juego</summary>
-          <label><input type="checkbox" class="filtro-check" data-filter="juego" value="ataque"> Ataque</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="juego" value="defensa"> Defensa</label>
-        </details>
-
-        <details open>
-          <summary>Género</summary>
-          <label><input type="checkbox" class="filtro-check" data-filter="genero" value="hombre"> Hombre</label>
-          <label><input type="checkbox" class="filtro-check" data-filter="genero" value="mujer"> Mujer</label>
-        </details>
-
-        <details open>
-          <summary>Precio</summary>
-          <div class="rango">
-            <input id="rango" type="range" min="0" max="1000" step="10" value="1000">
-            <div class="salida-rango"><span id="salidaRango">0–1000 €</span></div>
-          </div>
-        </details>
-
-        <button class="btn-limpiar" id="limpiar">Limpiar filtros</button>
-      </aside>
-
-      <section>
-        <div class="productos" id="rejilla">
-
-          <a href="producto-bullpadelneuron.html" class="tarjeta" data-marca="BullPadel" data-precio="339.90"
-            data-stock="1" data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque"
-            data-genero="hombre">
-            <span class="insignia">Novedad</span>
-            <img src="images/bullpadelneuron.png" alt="BullPadel Neuron 02 2026">
-            <h3>BullPadel Neuron 02</h3>
-            <p class="precio">339,90 €</p>
-
-          </a>
-
-          <a href="producto-bullpadelvertex.html" class="tarjeta" data-marca="BullPadel" data-precio="279.99"
-            data-stock="1" data-tipo="control" data-peso="ligera" data-nivel="medio" data-juego="defensa"
-            data-genero="mujer">
-            <img src="images/bullpadelvertex04.png" alt="BullPadel Vertex 04">
-            <h3>BullPadel Vertex 04</h3>
-            <p class="precio">279,99 €</p>
-          </a>
-
-          <a href="producto-bullpadelwonder.html" class="tarjeta" data-marca="BullPadel" data-precio="319.90"
-            data-stock="0" data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque"
-            data-genero="hombre">
-            <img src="images/bullpadelwonder.png" alt="BullPadel Wonder">
-            <h3>BullPadel Wonder</h3>
-            <p class="precio">319,90 €</p>
-          </a>
-
-          <a href="producto-noxextreme.html" class="tarjeta" data-marca="NOX" data-precio="189.99" data-stock="1"
-            data-tipo="control" data-peso="ligera" data-nivel="iniciación" data-juego="defensa" data-genero="mujer">
-            <span class="insignia">Novedad</span>
-            <img src="images/noxextreme.png" alt="NOX Extreme">
-            <h3>Nox Extreme</h3>
-            <p class="precio">189,99 €</p>
-          </a>
-
-          <a href="producto-headextreme.html" class="tarjeta" data-marca="Head" data-precio="359.95" data-stock="1"
-            data-tipo="potencia" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
-            <span class="insignia">Novedad</span>
-            <img src="images/headextreme.png" alt="Head Extreme Pro 2026">
-            <h3>Head Extreme Pro 2026</h3>
-            <p class="precio">359,95 €</p>
-          </a>
-
-          <a href="producto-noxat10.html" class="tarjeta" data-marca="NOX" data-precio="389.95" data-stock="1"
-            data-tipo="polivalente" data-peso="media" data-nivel="competición" data-juego="ataque" data-genero="hombre">
-            <span class="insignia">Novedad</span>
-            <img src="images/noxagus.png" alt="NOX AT10 Genius 12K">
-            <h3>NOX AT10 Genius 12K</h3>
-            <p class="precio">389,95 €</p>
-          </a>
-
+      <!-- BARRA DE BÚSQUEDA -->
+      <div class="row mb-4 align-items-center">
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+          <input id="buscar" type="search" class="form-control" placeholder="Buscar pala...">
         </div>
-      </section>
+        <div class="col-12 col-lg-8">
+          <div class="btn-group w-100" role="group" aria-label="Ordenar">
+            <button type="button" class="btn btn-outline-secondary active">✔ Novedades</button>
+            <button type="button" class="btn btn-outline-secondary">Precio Ascendente</button>
+            <button type="button" class="btn btn-outline-secondary">Precio Descendente</button>
+            <button type="button" class="btn btn-outline-secondary">En stock</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA PRINCIPAL: FILTROS + PRODUCTOS -->
+      <div class="row">
+
+        <!-- COLUMNA FILTROS (IZQUIERDA) -->
+        <aside class="col-12 col-lg-3 mb-4 mb-lg-0">
+          <div class="border bg-white rounded-4 p-3 shadow-sm">
+            <h3 class="h5 mb-3">Filtrar por</h3>
+
+            <!-- Control / Potencia -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Control / Potencia</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tipoControl">
+                <label class="form-check-label" for="tipoControl">Control</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tipoPotencia">
+                <label class="form-check-label" for="tipoPotencia">Potencia</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="tipoPolivalente">
+                <label class="form-check-label" for="tipoPolivalente">Polivalente</label>
+              </div>
+            </div>
+
+            <!-- Peso -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Peso</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pesoLigera">
+                <label class="form-check-label" for="pesoLigera">Ligera</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="pesoMedia">
+                <label class="form-check-label" for="pesoMedia">Media</label>
+              </div>
+            </div>
+
+            <!-- Marcas -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Marcas</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaBull">
+                <label class="form-check-label" for="marcaBull">BullPadel</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaHead">
+                <label class="form-check-label" for="marcaHead">Head</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaSiux">
+                <label class="form-check-label" for="marcaSiux">Siux</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="marcaNox">
+                <label class="form-check-label" for="marcaNox">NOX</label>
+              </div>
+            </div>
+
+            <!-- Nivel -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Nivel</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nivelIni">
+                <label class="form-check-label" for="nivelIni">Iniciación</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nivelMedio">
+                <label class="form-check-label" for="nivelMedio">Medio</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="nivelComp">
+                <label class="form-check-label" for="nivelComp">Competición</label>
+              </div>
+            </div>
+
+            <!-- Tipo de juego -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Tipo de juego</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="juegoAtaque">
+                <label class="form-check-label" for="juegoAtaque">Ataque</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="juegoDefensa">
+                <label class="form-check-label" for="juegoDefensa">Defensa</label>
+              </div>
+            </div>
+
+            <!-- Género -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Género</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="genHombre">
+                <label class="form-check-label" for="genHombre">Hombre</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="genMujer">
+                <label class="form-check-label" for="genMujer">Mujer</label>
+              </div>
+            </div>
+
+            <!-- Precio -->
+            <div class="mb-3">
+              <p class="fw-semibold mb-1">Precio</p>
+              <input type="range" class="form-range" min="0" max="400" value="400" id="rangoPrecioPalas">
+              <small class="text-muted">0 € – 400 €</small>
+            </div>
+
+            <button class="btn btn-outline-secondary w-100 mt-2">
+              Limpiar filtros
+            </button>
+          </div>
+        </aside>
+
+        <!-- COLUMNA PRODUCTOS (DERECHA) -->
+        <section class="col-12 col-lg-9">
+          <div class="row g-4">
+
+            <!-- PALA 1 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <span class="insignia">Novedad</span>
+                <img src="images/bullpadelneuron.png" class="card-img-top" alt="BullPadel Neuron 02 2026">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">BullPadel Neuron 02 2026</h3>
+                  <p class="mb-1 text-muted">Potencia · Competición</p>
+                  <p class="precio mb-2">339,90 €</p>
+                  <a href="producto-bullpadelneuron.html" class="btn btn-outline-primary w-100">
+                    Ver detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PALA 2 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <img src="images/bullpadelvertex04.png" class="card-img-top" alt="BullPadel Vertex 04">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">BullPadel Vertex 04</h3>
+                  <p class="mb-1 text-muted">Control · Nivel medio</p>
+                  <p class="precio mb-2">279,99 €</p>
+                  <a href="producto-bullpadelvertex.html" class="btn btn-outline-primary w-100">
+                    Ver detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PALA 3 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <img src="images/bullpadelwonder.png" class="card-img-top" alt="BullPadel Wonder">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">BullPadel Wonder</h3>
+                  <p class="mb-1 text-muted">Polivalente · Competición</p>
+                  <p class="precio mb-2">319,90 €</p>
+                  <a href="producto-bullpadelwonder.html" class="btn btn-outline-primary w-100">
+                    Ver detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PALA 4 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <span class="insignia">Novedad</span>
+                <img src="images/noxextreme.png" class="card-img-top" alt="Nox Extreme">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Nox Extreme</h3>
+                  <p class="mb-1 text-muted">Control · Iniciación</p>
+                  <p class="precio mb-2">189,99 €</p>
+                  <a href="producto-noxextreme.html" class="btn btn-outline-primary w-100">
+                    Ver detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PALA 5 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <span class="insignia">Novedad</span>
+                <img src="images/headextreme.png" class="card-img-top" alt="Head Extreme Pro 2026">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">Head Extreme Pro 2026</h3>
+                  <p class="mb-1 text-muted">Potencia · Competición</p>
+                  <p class="precio mb-2">359,95 €</p>
+                  <a href="producto-headextreme.html" class="btn btn-outline-primary w-100">
+                    Ver detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PALA 6 -->
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 text-center tarjeta">
+                <span class="insignia">Novedad</span>
+                <img src="images/noxagus.png" class="card-img-top" alt="NOX AT10 Genius 12K">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h3 class="card-title h6">NOX AT10 Genius 12K</h3>
+                  <p class="mb-1 text-muted">Polivalente · Competición</p>
+                  <p class="precio mb-2">389,95 €</p>
+                  <a href="producto-noxat10.html" class="btn btn-outline-primary w-100">
+                    Ver detalles
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
     </div>
   </main>
 
+  <!-- FOOTER  -->
   <footer class="footer">
     <div class="contenedor rejilla-footer">
       <div>
         <h4>Síguenos</h4>
-        <div class="sociales">
-          <a href="https://www.instagram.com" target="_blank" title="Instagram">
+
+        <nav class="sociales" aria-label="Redes sociales">
+          <a class="social" href="https://www.instagram.com" target="_blank" title="Instagram" rel="noopener">
             <span class="material-symbols-outlined">photo_camera</span>
           </a>
-          <a href="https://twitter.com" target="_blank" title="Twitter">
+          <a class="social" href="https://twitter.com" target="_blank" title="Twitter" rel="noopener">
             <span class="material-symbols-outlined">public</span>
           </a>
-          <a href="https://facebook.com" target="_blank" title="Facebook">
+          <a class="social" href="https://facebook.com" target="_blank" title="Facebook" rel="noopener">
             <span class="material-symbols-outlined">group</span>
           </a>
-          <a href="https://youtube.com" target="_blank" title="YouTube">
+          <a class="social" href="https://youtube.com" target="_blank" title="YouTube" rel="noopener">
             <span class="material-symbols-outlined">smart_display</span>
           </a>
-        </div>
+        </nav>
 
         <p class="texto-peq">© 2026 PadelShop</p>
       </div>
@@ -222,14 +359,16 @@
         </ul>
       </div>
     </div>
+
     <!-- Licencia Creative Commons -->
     <div class="licencia-cc contenedor">
       <p>
         <a href="https://padel-pro-phi.vercel.app/index.html" target="_blank" rel="noopener">PadelPro</a> © 2025 by
         <a href="https://github.com/Rafaelrdl12/Padel-Pro" target="_blank" rel="noopener">Rafael De La Fuente López</a>
         is licensed under
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">CC BY-NC-SA
-          4.0</a>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="license noopener">
+          CC BY-NC-SA 4.0
+        </a>
         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="cc-icon">
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" class="cc-icon">
         <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NC" class="cc-icon">
@@ -237,6 +376,15 @@
       </p>
     </div>
   </footer>
+
+  <!-- Sonido -->
+  <audio id="fx-transicion" src="audio/sonidoTransicion.mp3" preload="auto"></audio>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="padelpro.js"></script>
 
 </body>
 

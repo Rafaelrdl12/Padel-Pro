@@ -68,11 +68,14 @@
   line-height: 1;
   padding: 8px 10px;
   border: 1px solid #e5e7eb;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   cursor: pointer;
 }
 
+.btn-carrito .cart-count {
+  color: #000 ;
+}
 .iconos button:hover {
   background: #f3f4f6;
 }
